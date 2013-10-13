@@ -7,7 +7,7 @@ syntax enable
 " Pathogen
 execute pathogen#infect()
 
-" Solaris theme
+" Solarized theme
 set background=dark
 colorscheme solarized
 
