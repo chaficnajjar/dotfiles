@@ -1,10 +1,13 @@
+" Adds line numbers
 set number
 
-syntax on
-filetype plugin indent on
+" Synthax highlighting 
+syntax enable
 
+" Pathogen
 execute pathogen#infect()
 
+" Solaris theme
 set background=dark
 colorscheme solarized
 
