@@ -1,26 +1,48 @@
 " Use vim settings instead of Vi settings
 set nocompatible
 
-" Adds line numbers
+" Show what you are typing as a command.
+set showcmd
+
+" Folding (http://www.linux.com/learn/tutorials/442438-vim-tips-folding-fun)
+set foldmethod=marker
+
+" Add line number
 set number
 
-" Highlighting search matches
+" Highlight search matches
 set hlsearch
+
+" Ignoring case when searching
+set ignorecase
 
 " Synthax highlighting
 syntax enable
 
-" Indentation
-set autoindent
-set smartindent
-set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set expandtab
+" Incremental search
+set incsearch 
 
+"This actually loads the file ftplugin.vim in runtimepath.
+"The result is that when a file is edited its plugin file is loaded
+"(if there is one for the detected filetype)
 filetype plugin on
+
+" Indentation
+set autoindent      " set the cursor at same indent as line above
+set smartindent     " try to be smart about indenting (C-style)
+
+set tabstop=4       " changes the width of the TAB character
+set shiftwidth=4    " affects what happens when pressing >> or <<
+set softtabstop=4   " with expandtab enabled, allows deleting 4 spaces
+set expandtab       " turns TAB into 4 spaces
+
+" This actually loads the file indent.vim in 'runtimepath'.
+" The result is that when a file is edited its indent file is loaded 
+" (if there is one for the detected filetype).
 filetype indent on
+
+" Display status line
+set statusline=2
 
 " Turn off swap files
 set noswapfile
@@ -37,3 +59,5 @@ colorscheme solarized
 if $COLORTERM == 'gnome-terminal'
 	set t_Co=256
 endif
+
+" Mapping keys
