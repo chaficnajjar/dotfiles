@@ -109,4 +109,6 @@ fi
 # Set correct term for tmux so solarized theme works in vim
 alias tmux="TERM=screen-256color-bce tmux"
 
-. /home/chafic/Programs/z-master/z.sh
+. /home/chafic/scripts/z-master/z.sh
+
+PATH="$PATH:$HOME/scripts"
