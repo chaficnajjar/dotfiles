@@ -19,6 +19,9 @@ set ignorecase
 " Synthax highlighting
 syntax enable
 
+" Highlight current line
+set cursorline
+
 " Incremental search
 set incsearch 
 
@@ -28,6 +31,7 @@ set incsearch
 filetype plugin on
 
 " Indentation
+retab
 set autoindent      " set the cursor at same indent as line above
 set smartindent     " try to be smart about indenting (C-style)
 
@@ -35,6 +39,8 @@ set tabstop=4       " changes the width of the TAB character
 set shiftwidth=4    " affects what happens when pressing >> or <<
 set softtabstop=4   " with expandtab enabled, allows deleting 4 spaces
 set expandtab       " turns TAB into 4 spaces
+
+
 
 " This actually loads the file indent.vim in 'runtimepath'.
 " The result is that when a file is edited its indent file is loaded 
