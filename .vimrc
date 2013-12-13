@@ -70,3 +70,6 @@ endif
 
 " Tab label will show even if only one file is opened
 set showtabline=2
+
+" Disable auto commenting
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
