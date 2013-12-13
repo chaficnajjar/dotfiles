@@ -44,8 +44,6 @@ set shiftwidth=4    " affects what happens when pressing >> or <<
 set softtabstop=4   " with expandtab enabled, allows deleting 4 spaces
 set expandtab       " turns TAB into 4 spaces
 
-
-
 " This actually loads the file indent.vim in 'runtimepath'.
 " The result is that when a file is edited its indent file is loaded 
 " (if there is one for the detected filetype).
@@ -67,7 +65,8 @@ set background=dark
 colorscheme solarized
 
 if $COLORTERM == 'gnome-terminal'
-	set t_Co=256
+    set t_Co=256
 endif
 
-" Mapping keys
+" Tab label will show even if only one file is opened
+set showtabline=2
