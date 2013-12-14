@@ -73,3 +73,13 @@ set showtabline=2
 
 " Disable auto commenting
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Disable arrow keys in both modes
+inoremap <up> <nop>
+noremap <up> <nop>
+inoremap <down> <nop>
+noremap <down> <nop>
+inoremap <left> <nop>
+noremap <left> <nop>
+inoremap <right> <nop>
+noremap <right> <nop>
