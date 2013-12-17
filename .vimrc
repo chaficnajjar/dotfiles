@@ -10,7 +10,7 @@ set foldmethod=marker
 " Add line number
 set number
 
-" Highlight search matches
+" highlight search matches
 set hlsearch
 
 " Ignoring case when searching
@@ -83,3 +83,6 @@ inoremap <left> <nop>
 noremap <left> <nop>
 inoremap <right> <nop>
 noremap <right> <nop>
+
+" Curly brace + enter key = proper indentation 
+inoremap {<CR> {<CR>}<C-o>O
