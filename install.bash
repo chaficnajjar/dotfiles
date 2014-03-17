@@ -11,7 +11,7 @@ else
     mkdir ~/dotfiles_backup
     for file in $files; do
         # move file or directory to backup directory only if it exists
-        if [ -f "$HOME/.$file" ] || [ -d "$HOME/.$file" ]; then
+        if [ -f "$HOME/.$file" ] || [ -d "$HOME/.$file" ] || [ -L "$HOME/.$file" ]; then
             mv ~/.$file ~/dotfiles_backup/$file
         fi
 
