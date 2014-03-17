@@ -1,6 +1,7 @@
 #!/bin/bash
 
 files="bashrc vimrc vim tmux.conf"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # clean and backup
 
@@ -14,8 +15,8 @@ else
             mv ~/.$file ~/dotfiles_backup/$file
         fi
 
-        echo "Creating symlink to $HOME/Projects/dotfiles/$file...done!"
+        echo "Creating symlink to $DIR/$file...done!"
         # create symlink
-        ln -s ~/Projects/dotfiles/$file ~/.$file
+        ln -s $DIR/$file ~/.$file
     done
 fi
