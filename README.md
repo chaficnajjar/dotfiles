@@ -5,5 +5,15 @@ A collection of dot configurations.
 
 ## Installation
 
-1. `git clone https://github.com/chaficnajjar/dotfiles.git`
-2. `./install.bash`
+#### Clone the repo
+`git clone https://github.com/chaficnajjar/dotfiles.git ~/Projects/dotfiles`
+
+### Create symlinks
+`./install.bash`
+
+### Fetch submodules
+`cd ~/Projects/dotfiles`
+
+`git submodule init`
+
+`git submodule update`
