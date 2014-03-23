@@ -22,6 +22,9 @@ syntax enable
 " Highlight current line
 set cursorline
 
+" Turn cursorline off when in insert mode
+autocmd InsertEnter,InsertLeave * set cul!
+
 " Incremental search
 set incsearch 
 
@@ -86,3 +89,4 @@ noremap <right> <nop>
 
 " Curly brace + enter key = proper indentation 
 inoremap {<CR> {<CR>}<C-o>O
+
