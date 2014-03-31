@@ -10,8 +10,11 @@ set foldmethod=marker
 " Add line number
 set number
 
-" highlight search matches
+" Highlight search matches
 set hlsearch
+
+" Display long lines as just one line
+set nowrap
 
 " Ignoring case when searching
 set ignorecase
