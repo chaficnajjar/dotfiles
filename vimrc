@@ -93,8 +93,13 @@ noremap <right> <nop>
 " Curly brace + enter key = proper indentation 
 inoremap {<CR> {<CR>}<C-o>O
 
-" Windows naviguation
+" Windows navigation
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Buffer navigation
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>
