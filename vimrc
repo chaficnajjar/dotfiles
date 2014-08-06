@@ -103,3 +103,6 @@ nnoremap <C-l> <C-w>l
 map gn :bn<cr>
 map gp :bp<cr>
 map gd :bd<cr>
+
+" Stop indenting when pasting with the mouse
+set pastetoggle=<F5>
