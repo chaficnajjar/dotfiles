@@ -4,3 +4,6 @@
 [submodule "vim/bundle/vim-instant-markdown"]
     path = vim/bundle/vim-instant-markdown
     url = https://github.com/suan/vim-instant-markdown.git
+[submodule "vim/bundle/vim-glsl"]
+    path = vim/bundle/vim-glsl
+    url = https://github.com/tikhomirov/vim-glsl.git
