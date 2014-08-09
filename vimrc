@@ -106,3 +106,6 @@ map gd :bd<cr>
 
 " Stop indenting when pasting with the mouse
 set pastetoggle=<F5>
+
+" Turn on comment spell checking
+set spell
