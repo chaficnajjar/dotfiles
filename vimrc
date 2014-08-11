@@ -109,3 +109,6 @@ set pastetoggle=<F5>
 
 " Turn on comment spell checking
 set spell
+
+let g:syntastic_cpp_check_header = 1
+let g:syntastic_cpp_compiler_options = '-std=c++0x'
