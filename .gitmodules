@@ -1,9 +1,21 @@
+[submodule "vim/bundle/delimMate"]
+    path = vim/bundle/delimMate
+    url = https://github.com/Raimondi/delimitMate.git
 [submodule "vim/bundle/nerdcommenter"]
     path = vim/bundle/nerdcommenter
     url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/bundle/vim-instant-markdown"]
-    path = vim/bundle/vim-instant-markdown
-    url = https://github.com/suan/vim-instant-markdown.git
+[submodule "vim/bundle/nerdtree"]
+    path = vim/bundle/nerdtree
+    url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/syntastic"]
+    path = vim/bundle/syntastic
+    url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/bundle/vim-colors-solarized"]
+    path = vim/bundle/vim-colors-solarized
+    url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/vim-glsl"]
     path = vim/bundle/vim-glsl
     url = https://github.com/tikhomirov/vim-glsl.git
+[submodule "vim/bundle/vim-instant-markdown"]
+    path = vim/bundle/vim-instant-markdown
+    url = https://github.com/suan/vim-instant-markdown.git
