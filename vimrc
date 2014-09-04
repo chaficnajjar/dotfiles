@@ -114,3 +114,7 @@ let g:syntastic_cpp_compiler_options = '-std=c++0x'
 " Continuously display current file name
 set laststatus=2
 set statusline+=%F
+
+
+" NERDTree ignores all object files
+let NERDTreeIgnore = ['\.o$']
