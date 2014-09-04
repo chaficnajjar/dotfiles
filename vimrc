@@ -74,9 +74,6 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-" Tab label will show even if only one file is opened
-set showtabline=2
-
 " Disable auto commenting
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
