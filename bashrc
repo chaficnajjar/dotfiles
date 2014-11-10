@@ -110,5 +110,5 @@ fi
 alias tmux="TERM=screen-256color-bce tmux"
 
 # custom scripts
-. /home/chafic/bin/z-master/z.sh
+. /home/chafic/bin/z/z.sh
 export PATH="$HOME/bin:$PATH"
