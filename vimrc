@@ -115,6 +115,8 @@ let g:syntastic_cpp_compiler_options = '-std=c++0x'
 set laststatus=2
 set statusline+=%F
 
-
 " NERDTree ignores all object files
 let NERDTreeIgnore = ['\.o$']
+
+" js-beautify
+map <c-f> :call JsBeautify()<cr>
