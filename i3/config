@@ -154,9 +154,6 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && killa
 # Network manager
 exec --no-startup-id nm-applet
 
-# Start dropbox folder
-exec ~/.dropbox-dist/dropboxd
-
 # Switch workspaces left/right
 bindsym $mod+Left workspace prev
 bindsym $mod+Right workspace next
@@ -165,4 +162,7 @@ bindsym $mod+k workspace next
 
 # Lock screen
 bindsym $mod+Ctrl+l exec $HOME/bin/lock
+
+exec ~/.dropbox-dist/dropboxd               # dropbox
+exec redshift-gtk -l 33.89:35.51            # redshift
 
