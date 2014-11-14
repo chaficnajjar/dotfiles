@@ -163,6 +163,5 @@ bindsym $mod+k workspace next
 # Lock screen
 bindsym $mod+Ctrl+l exec $HOME/bin/lock
 
-exec ~/.dropbox-dist/dropboxd               # dropbox
 exec redshift-gtk -l 33.89:35.51            # redshift
 
