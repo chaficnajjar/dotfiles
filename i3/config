@@ -37,10 +37,10 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+h focus left
+bindsym $mod+j focus left
 #bindsym $mod+j focus down
 #bindsym $mod+k focus up
-bindsym $mod+l; focus right
+bindsym $mod+k; focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -161,8 +161,8 @@ exec --no-startup-id unity-settings-daemon
 # Switch workspaces left/right
 bindsym $mod+Left workspace prev
 bindsym $mod+Right workspace next
-bindsym $mod+j workspace prev
-bindsym $mod+k workspace next
+bindsym $mod+h workspace prev
+bindsym $mod+l workspace next
 
 # Lock screen
 bindsym $mod+Ctrl+l exec $HOME/bin/lock
@@ -186,3 +186,5 @@ bindsym $mod+Delete mode "$mode_system"
 
 # Deactivate window focus to follow mouse movement
 focus_follows_mouse no
+
+for_window [instance="gaia"] floating enable
