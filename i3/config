@@ -187,4 +187,6 @@ bindsym $mod+Delete mode "$mode_system"
 # Deactivate window focus to follow mouse movement
 focus_follows_mouse no
 
+# Launch in floating mode
 for_window [instance="gaia"] floating enable
+for_window [instance="totem"] floating enable
