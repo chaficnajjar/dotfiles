@@ -120,3 +120,12 @@ let NERDTreeIgnore = ['\.o$']
 
 " js-beautify
 map <c-f> :call JsBeautify()<cr>
+
+" remove toolbar in gvim
+set guioptions -=T
+
+" remove right scrollbar
+set guioptions -=r
+
+" remove left scrollbar
+set guioptions -=L
