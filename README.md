@@ -12,8 +12,8 @@ A collection of dot configurations.
 `./install.bash`
 
 ### Fetch submodules
-`cd ~/Projects/dotfiles`
-
-`git submodule init`
-
-`git submodule update`
+```
+cd ~/Projects/dotfiles
+git submodule init
+git submodule update
+```
