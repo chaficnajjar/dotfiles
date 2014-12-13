@@ -9,7 +9,7 @@ A collection of dot configurations.
 `git clone https://github.com/chaficnajjar/dotfiles.git ~/Projects/dotfiles`
 
 ### Create symlinks
-`./install.bash`
+`./install`
 
 ### Fetch submodules
 ```
