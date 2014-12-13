@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files="bashrc vimrc vim tmux.conf i3"
+files="bashrc vimrc vim tmux.conf i3 i3status.conf"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # clean and backup
