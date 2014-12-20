@@ -129,3 +129,6 @@ set guioptions -=r
 
 " remove left scrollbar
 set guioptions -=L
+
+" break search after reaching last found item 
+set nowrapscan
