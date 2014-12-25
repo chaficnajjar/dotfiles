@@ -135,3 +135,6 @@ set nowrapscan
 
 " set leader key to ,
 let mapleader=","
+
+" Goyo shortcut
+nnoremap <silent> <leader>z :Goyo<cr>
