@@ -132,3 +132,6 @@ set guioptions -=L
 
 " break search after reaching last found item 
 set nowrapscan
+
+" set leader key to ,
+let mapleader=","
