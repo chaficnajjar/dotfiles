@@ -138,3 +138,6 @@ let mapleader=","
 
 " Goyo shortcut
 nnoremap <silent> <leader>z :Goyo<cr>
+
+" Disable markdown highlight 
+autocmd VimEnter * highlight clear htmlItalic
