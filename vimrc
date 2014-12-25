@@ -141,3 +141,6 @@ nnoremap <silent> <leader>z :Goyo<cr>
 
 " Disable markdown highlight 
 autocmd VimEnter * highlight clear htmlItalic
+
+" Enable syntax highlighting for .md files
+au BufRead,BufNewFile *.md set filetype=markdown
