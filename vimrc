@@ -55,9 +55,6 @@ set expandtab       " turns TAB into 4 spaces
 " (if there is one for the detected filetype).
 filetype indent on
 
-" Display status line
-set statusline=2
-
 " Turn off swap files
 set noswapfile
 set nobackup
@@ -111,9 +108,8 @@ set spell
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_compiler_options = '-std=c++0x'
 
-" Continuously display current file name
+"" Display status line
 set laststatus=2
-set statusline+=%F
 
 " NERDTree ignores all object files
 let NERDTreeIgnore = ['\.o$']
@@ -144,3 +140,12 @@ autocmd VimEnter * highlight clear htmlItalic
 
 " Enable syntax highlighting for .md files
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" Integrate vim-airline with previously installed powerline fonts
+" Patched powerline fonts fix triangle character alignment problems
+" https://github.com/powerline/fonts
+let g:airline_powerline_fonts = 1
+
+" Unicode encoding
+set encoding=utf-8
+scriptencoding utf-8
