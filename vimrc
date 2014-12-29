@@ -63,9 +63,13 @@ set nowb
 " Pathogen
 execute pathogen#infect()
 
-" Solarized theme
+" Gruvbox (https://github.com/morhetz/gruvbox) theme
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
+
+if !has("gui_running")
+   let g:gruvbox_italic=0
+endif
 
 if $COLORTERM == 'gnome-terminal'
     set t_Co=256
