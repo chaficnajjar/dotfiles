@@ -10,7 +10,7 @@ VERSION  =  $(shell $(SED) -n -e '/Current \+release/{s/^ \+\([0-9.]\+\).*/\1/;p
 FILENAME =  $(NAME)-$(VERSION)
 DESTDIR  =  $(HOME)/.vim
 VIM      =  vim
-SED      =  gsed
+SED      =  $(shell command -v gsed || command -v sed)
 PERL     =  perl
 comma    := ,
 empty    :=
@@ -47,7 +47,7 @@ version:
 	  $(DOC)
 
 test:
-	runVimTests -0 test
+	$(MAKE) -C test
 
 install: $(SOURCES)
 	for dir in $(^D);\
