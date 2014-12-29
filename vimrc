@@ -153,3 +153,6 @@ let g:airline_powerline_fonts = 1
 " Unicode encoding
 set encoding=utf-8
 scriptencoding utf-8
+
+" Super efficient shortcut
+nnoremap ; :
