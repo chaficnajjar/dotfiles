@@ -6,14 +6,14 @@ A collection of dot configurations.
 ## Installation
 
 #### Clone the repo
-`git clone https://github.com/chaficnajjar/dotfiles.git ~/Projects/dotfiles`
+`git clone https://github.com/chaficnajjar/dotfiles.git ~/projects/dotfiles`
 
 ### Create symlinks
 `./install`
 
 ### Fetch submodules
 ```
-cd ~/Projects/dotfiles
-git submodule init
-git submodule update
+cd ~/projects/dotfiles
+git submodule update --init --recursive
+git submodule update --init --remote
 ```
