@@ -1,0 +1,932 @@
+info_begin
+format: 1
+mpd_version: 0.18.7
+fs_charset: UTF-8
+tag: Artist
+tag: ArtistSort
+tag: Album
+tag: AlbumArtist
+tag: AlbumArtistSort
+tag: Title
+tag: Track
+tag: Name
+tag: Genre
+tag: Date
+tag: Composer
+tag: Performer
+tag: Disc
+tag: MUSICBRAINZ_ARTISTID
+tag: MUSICBRAINZ_ALBUMID
+tag: MUSICBRAINZ_ALBUMARTISTID
+tag: MUSICBRAINZ_TRACKID
+info_end
+directory: bought_music
+mtime: 1417715644
+begin: bought_music
+song_begin: Echoes (Original Mix) - Qbig, Zenith B.mp3
+Time: 267
+Artist: Qbig, Zenith B
+Title: Echoes (Original Mix)
+Album: Escapism 2 - (Liquicity Presents)
+Track: 14
+Date: 2014
+Genre: Drum & Bass
+mtime: 1417544318
+song_end
+song_begin: Motions (Original Mix) - Nymfo, Maduk.mp3
+Time: 299
+Artist: Nymfo, Maduk
+Title: Motions (Original Mix)
+Album: Motions EP
+Track: 1
+Date: 2014
+Genre: Drum & Bass
+mtime: 1414846880
+song_end
+song_begin: Tokyo Street - Airtone.mp3
+Time: 236
+Artist: airtone
+Title: tokyoStreet
+Album: ccMixter
+Date: 2010
+Performer: airtone
+mtime: 1283762888
+song_end
+end: bought_music
+directory: christmas
+mtime: 1419197687
+begin: christmas
+song_begin: Billy Gilman - Warm & Fuzzy.mp3
+Time: 188
+mtime: 1386047565
+song_end
+song_begin: Britney Spears My Only Wish (This Year) - Christmas Song.mp3
+Time: 256
+mtime: 1417277051
+song_end
+song_begin: Cascada Last Christmas.mp3
+Time: 233
+mtime: 1417137478
+song_end
+song_begin: Feliz Navidad.mp3
+Time: 183
+mtime: 1417073522
+song_end
+song_begin: Glee - Jingle Bell Rock.mp3
+Time: 152
+mtime: 1401778605
+song_end
+song_begin: It's Not Christmas Without You - Victorious Cast Ft. Victoria Justice.mp3
+Time: 153
+mtime: 1394314637
+song_end
+song_begin: Joy To The World.mp3
+Time: 155
+mtime: 1394269960
+song_end
+song_begin: Kelly Clarkson - Underneath the Tree.mp3
+Time: 231
+mtime: 1417130642
+song_end
+song_begin: Kelly Clarkson Have Yourself A Merry Little Christmas.mp3
+Time: 223
+mtime: 1416973365
+song_end
+song_begin: Let it Snow - Michael Buble.mp3
+Time: 129
+mtime: 1388625663
+song_end
+song_begin: Little Drummer Boy - Pentatonix.mp3
+Time: 254
+mtime: 1394268873
+song_end
+song_begin: Mariah Carey - All I Want For Christmas Is You.mp3
+Time: 235
+mtime: 1394278272
+song_end
+song_begin: Michael Bublé - White Christmas.mp3
+Time: 237
+mtime: 1416562712
+song_end
+song_begin: Michael Bublé~Have yourself a merry little Christmas.mp3
+Time: 414
+mtime: 1389170461
+song_end
+song_begin: Rudolph The Red Nosed Reindeer.mp3
+Time: 203
+mtime: 1394292441
+song_end
+song_begin: Santa Claus Is Coming To Town.mp3
+Time: 79
+mtime: 1417228669
+song_end
+song_begin: Silent Night.mp3
+Time: 176
+mtime: 1394286817
+song_end
+song_begin: Taylor Swift- Christmases When You Were Mine.mp3
+Time: 182
+mtime: 1386303270
+song_end
+song_begin: The First Noel - Carrie Underwood.mp3
+Time: 270
+mtime: 1388761073
+song_end
+song_begin: Train - Shake up Christmas.mp3
+Time: 241
+mtime: 1398443421
+song_end
+song_begin: We wish you a merry christmas.mp3
+Time: 261
+mtime: 1405133342
+song_end
+end: christmas
+directory: music
+mtime: 1414482300
+begin: music
+song_begin: 'The Social Network' Soundtrack - In Motion by Trent Reznor & Atticus Ross.mp4
+Time: 297
+mtime: 1387751348
+song_end
+song_begin: AYER - Circle Down.mp3
+Time: 266
+mtime: 1388111262
+song_end
+song_begin: AZEDIA - Agony.mp3
+Time: 386
+mtime: 1385093310
+song_end
+song_begin: Astronaut - Quantum (Virtual Riot Remix).mp3
+Time: 292
+mtime: 1400334664
+song_end
+song_begin: Astronaut - Rain (MitiS Remix).mp3
+Time: 221
+mtime: 1386753192
+song_end
+song_begin: Avicii - Addicted To You (Avicii By Avicii).mp3
+Time: 333
+mtime: 1400334646
+song_end
+song_begin: Azedia Something - Rameses B Remix.mp3
+Time: 266
+mtime: 1391359686
+song_end
+song_begin: BCee - The Falls.mp3
+Time: 206
+mtime: 1394307448
+song_end
+song_begin: BMotion - All My Love.mp3
+Time: 270
+mtime: 1400782368
+song_end
+song_begin: Background Music Instrumentals - relaxdaily - B-Sides N°1.mp3
+Time: 9300
+mtime: 1357951520
+song_end
+song_begin: Bakermat - SIMON&ME  MUSIQUE x bakermat.mp3
+Time: 3264
+mtime: 1386561006
+song_end
+song_begin: Blake Reary - Nowhere Near (Rameses B Remix).mp3
+Time: 292
+mtime: 1386126534
+song_end
+song_begin: Boyce Avenue - Breakeven (Lexer Edit).mp3
+Time: 371
+mtime: 1394288244
+song_end
+song_begin: Bryzone - Stargaze.mp3
+Time: 312
+mtime: 1397930074
+song_end
+song_begin: CATHEDRALS - Unbound.mp3
+Time: 201
+mtime: 1388637350
+song_end
+song_begin: Champion - Crystallise.mp3
+Time: 258
+mtime: 1400334674
+song_end
+song_begin: Champion - Phoenix.mp3
+Time: 254
+mtime: 1401019100
+song_end
+song_begin: Christina Walls - Ready 4 It (Wavelen Remix).mp3
+Time: 279
+mtime: 1400122646
+song_end
+song_begin: Claptone - No Eyes (feat. Jaw) (Gamper & Dadoni Remix).mp3
+Time: 328
+mtime: 1385864436
+song_end
+song_begin: Collin McLoughlin Acetronik.mp3
+Time: 253
+mtime: 1391359694
+song_end
+song_begin: DPB - Thinking About.mp3
+Time: 228
+mtime: 1394427776
+song_end
+song_begin: Day One - Horizon.mp3
+Time: 284
+mtime: 1385417872
+song_end
+song_begin: Death Note Original Soundtrack I.mp3
+Time: 4223
+mtime: 1349009388
+song_end
+song_begin: Dirty Vegas - Let The Night (Dualistic Remix).mp3
+Time: 290
+mtime: 1400475530
+song_end
+song_begin: Dualistic - No Air.mp3
+Time: 218
+mtime: 1401259656
+song_end
+song_begin: EMBRZ - Make Your Way.mp3
+Time: 321
+mtime: 1386389486
+song_end
+song_begin: Electro House (April 2014) v3.mp3
+Time: 4293
+Title: Electro House (April 2014) v3
+mtime: 1408117884
+song_end
+song_begin: Feint - Sky Dance.mp3
+Time: 261
+mtime: 1391359606
+song_end
+song_begin: Flush - Home.mp3
+Time: 238
+mtime: 1387657250
+song_end
+song_begin: Fracus & Darwin ft. Mi'A - Little Shadows.mp3
+Time: 346
+mtime: 1400379266
+song_end
+song_begin: Frankee - Away.mp3
+Time: 316
+mtime: 1400334684
+song_end
+song_begin: Henry Green - Electric Feel (Gespleu Downcast Edit).mp3
+Time: 211
+mtime: 1385778274
+song_end
+song_begin: Hybrid Minds - Music Talks.mp3
+Time: 338
+mtime: 1385607664
+song_end
+song_begin: Isbells - Reunite (Niklas Thal Edit).mp3
+Time: 381
+mtime: 1384347362
+song_end
+song_begin: Jaymes Young - Fragments.mp3
+Time: 251
+mtime: 1391359644
+song_end
+song_begin: John Newman - Love Me Again Love Thy Brother Remix.mp3
+Time: 266
+mtime: 1391359660
+song_end
+song_begin: Journey OST - Complete Soundtrack.mp3
+Time: 3483
+mtime: 1389160084
+song_end
+song_begin: KOAN Sound & Asa - Starlite.mp3
+Time: 339
+mtime: 1384488428
+song_end
+song_begin: KOAN Sound & Asa - This Time Around feat Koo.mp3
+Time: 424
+mtime: 1391359592
+song_end
+song_begin: Kasbo - White Lies (feat. Lemon).mp3
+Time: 236
+mtime: 1388605936
+song_end
+song_begin: Kredo - Transistor.mp3
+Time: 292
+mtime: 1388702590
+song_end
+song_begin: L.A.O.S - Believe.mp3
+Time: 224
+mtime: 1400960774
+song_end
+song_begin: Lemaitre - Cut to Black.mp3
+Time: 201
+mtime: 1391359598
+song_end
+song_begin: Lenzman & Redeyes - Thieves In The Night (Technimatic Remix).mp3
+Time: 214
+mtime: 1401193132
+song_end
+song_begin: Lincoln Jesser - Something Right.mp3
+Time: 222
+mtime: 1388501724
+song_end
+song_begin: Liquicity Amsterdam - 8th February.mp3
+Time: 193
+mtime: 1393120666
+song_end
+song_begin: Liquicity Antwerp - Trix 15th March.mp3
+Time: 147
+mtime: 1399795592
+song_end
+song_begin: MTNS - Lost Track of Time.mp3
+Time: 174
+mtime: 1385556268
+song_end
+song_begin: Madface - Dawning.mp3
+Time: 216
+mtime: 1398393228
+song_end
+song_begin: Maduk - Avalon VIP.mp3
+Time: 275
+mtime: 1394428496
+song_end
+song_begin: Maduk - Change.mp3
+Time: 242
+mtime: 1393766440
+song_end
+song_begin: Mario M - Good Morning.mp3
+Time: 167
+mtime: 1385434432
+song_end
+song_begin: Mario M - The Last Saint.mp3
+Time: 233
+mtime: 1386390226
+song_end
+song_begin: Mat Zo feat. Rachel K Collier - Only For You (Estiva Remix).mp3
+Time: 344
+mtime: 1400334590
+song_end
+song_begin: Mr Probz - Waves (Robin Schulz Remix).mp3
+Time: 441
+mtime: 1391359676
+song_end
+song_begin: MÖWE - Blauer Tag (Robin Schulz Remix).mp3
+Time: 474
+mtime: 1391359578
+song_end
+song_begin: Noisestorm - Surge (Drum & Bass Mix).mp3
+Time: 250
+mtime: 1394397866
+song_end
+song_begin: Op6AS_u-hAw.mp3
+Time: 386
+mtime: 1391359636
+song_end
+song_begin: Panama Wedding - All Of The People.mp3
+Time: 214
+mtime: 1384244224
+song_end
+song_begin: Parra for Cuva - Elara.mp3
+Time: 346
+Artist: Parra for Cuva
+Title: Parra for Cuva - Elara
+mtime: 1407352024
+song_end
+song_begin: Phloem - Midnight Love.mp3
+Time: 341
+mtime: 1400686690
+song_end
+song_begin: Popeska - Heart Of Glass ft. Denny White (Champion Remix).mp3
+Time: 271
+mtime: 1399512714
+song_end
+song_begin: Porter Robinson - Sea of Voices.mp3
+Time: 300
+mtime: 1400334614
+song_end
+song_begin: Priority One & TwoThirds - City Needs Sleep.mp3
+Time: 237
+mtime: 1401209182
+song_end
+song_begin: Raise Spirit - When You're Ready.mp3
+Time: 281
+mtime: 1400588522
+song_end
+song_begin: Rameses B - Left Behind.mp3
+Time: 334
+mtime: 1401028382
+song_end
+song_begin: Rameses B - Years From Now.mp3
+Time: 328
+mtime: 1398440486
+song_end
+song_begin: Rudimental - Free feat. Emeli Sandé (Elk Road Remix).mp3
+Time: 320
+mtime: 1400334636
+song_end
+song_begin: Savant - Survive.mp3
+Time: 191
+mtime: 1388220606
+song_end
+song_begin: Say Lou Lou - Feels Like We Only Go Backwards (Tame Impala Cover).mp3
+Time: 213
+mtime: 1384649026
+song_end
+song_begin: Seinabo Sey - Younger (Kygo Remix).mp3
+Time: 352
+mtime: 1388855892
+song_end
+song_begin: Shirobon - Cyber Party (feat. Radix).mp3
+Time: 165
+mtime: 1384250642
+song_end
+song_begin: Shudan - Dreams.mp3
+Time: 292
+mtime: 1386917382
+song_end
+song_begin: Singularity - Vain (feat. Evan Duffy).mp3
+Time: 352
+mtime: 1385479624
+song_end
+song_begin: Skrux & Venemy - Eternity.mp3
+Time: 287
+mtime: 1400334606
+song_end
+song_begin: Smallpools - Mason Jar (Monsieur Adi Remix).mp3
+Time: 283
+mtime: 1386557384
+song_end
+song_begin: Station Earth - Astral Walker.mp3
+Time: 329
+mtime: 1394259244
+song_end
+song_begin: Stevie Wonder - Part Time Lover (Makoto & Danny Wheeler DnB Edit).mp3
+Time: 343
+mtime: 1400956872
+song_end
+song_begin: Stunna ft. Place 42 - Run.mp3
+Time: 419
+mtime: 1399262848
+song_end
+song_begin: Synthetic Epiphany - Icarus (feat. CoMa).mp3
+Time: 450
+mtime: 1386136910
+song_end
+song_begin: T & Sugah - Cast Away (ft. Ayve).mp3
+Time: 266
+mtime: 1400375426
+song_end
+song_begin: Task Horizon - Perfection (feat. James Gruntz).mp3
+Time: 303
+mtime: 1386851384
+song_end
+song_begin: Teqq vs. Alive & Kicking - Mistake (Insan3Lik3 Remix).mp3
+Time: 370
+mtime: 1385545482
+song_end
+song_begin: Tom Day - Future Holds.mp3
+Time: 461
+mtime: 1388953742
+song_end
+song_begin: Transistor Original Soundtrack - Full Album.mp3
+Time: 4372
+mtime: 1401174256
+song_end
+song_begin: Vancouver Sleep Clinic - Collapse.mp3
+Time: 221
+mtime: 1388600440
+song_end
+song_begin: Woody - Moonlight.mp3
+Time: 287
+mtime: 1399824666
+song_end
+song_begin: Xilent - Free Me (Smooth Remix).mp3
+Time: 291
+mtime: 1396617500
+song_end
+song_begin: Zedd - Find You (Killabyte Remix).mp3
+Time: 229
+mtime: 1400334654
+song_end
+song_begin: eelZkSWWoRE.mp4.mp3
+Time: 280
+mtime: 1391359652
+song_end
+song_begin: klaypex - Lights (Skrux Remix).mp3
+Time: 391
+mtime: 1400334626
+song_end
+song_begin: wxvz_w2JUkU.mp3
+Time: 341
+mtime: 1391359710
+song_end
+song_begin: Ed Sheeran - I See Fire (Kygo Remix).mp3
+Time: 317
+Artist: Ed Sheeran
+Title: I See Fire (Kygo Remix)
+Album: ThisSongIsSick.com
+Date: 2013
+Genre: Electronic
+mtime: 1385979420
+song_end
+song_begin: Mega Man 3 The Passing of the Blue Crown OC ReMix.mp3
+Time: 256
+Artist: Sixto Sounds, Steppo, zircon
+AlbumArtist: OverClocked ReMix
+Title: Mega Man 3 'The Passing of the Blue Crown' OC ReMix
+Album: http://ocremix.org
+Track: 1723
+Date: 2008
+Genre: Game
+Composer: Yasuaki Fujita
+mtime: 1349209732
+song_end
+end: music
+directory: old_music
+mtime: 1414482319
+begin: old_music
+song_begin: Asian Kung-Fu Generation - Rewrite.mp3
+Time: 227
+Artist: AKG
+Genre: J-Rock
+mtime: 1349470440
+song_end
+song_begin: EGOIST - All Alone With You.mp3
+Time: 350
+mtime: 1414080272
+song_end
+song_begin: Ethereal Dreams - Chill Mix.mp3
+Time: 3599
+mtime: 1361040294
+song_end
+song_begin: Green Day 21st century breakdown.mp3
+Time: 309
+Artist: Green Day
+Title: 21st Century Breakdown
+mtime: 1336997252
+song_end
+song_begin: Higher (Tribute To Egypt).mp3
+Time: 308
+Title: Patriarch, Ghazi, Kaotiq ft. Anna - Higher (Tribute To Egypt)
+mtime: 1346356452
+song_end
+song_begin: Imagine Dragons - Radioactive.mp3
+Time: 185
+mtime: 1365209130
+song_end
+song_begin: Naruto All Stars Shikamaru - Nagareboshi Shooting Star.mp3
+Time: 269
+mtime: 1299766110
+song_end
+song_begin: OST. Naruto - Raiko - ALIVE.MP3
+Time: 283
+Artist: Raiko
+Title: OST. Naruto - ALIVE
+Date: 2004
+Genre: Other
+Genre: Other
+mtime: 1308308988
+song_end
+song_begin: Paramore - Monster.mp3
+Time: 198
+mtime: 1325288970
+song_end
+song_begin: The Legend of Zelda 25th Anniversary Special Orchestra CD.mp3
+Time: 2718
+mtime: 1350771640
+song_end
+song_begin: Yura  Yura.mp3
+Time: 296
+Artist: Hearts Grow
+Title: Yura Yura
+Genre: Other
+mtime: 1295295736
+song_end
+song_begin: harukakanata.mp3
+Time: 243
+mtime: 1061553738
+song_end
+song_begin: m.craft - Dragonfly.mp3
+Time: 349
+mtime: 1361117044
+song_end
+song_begin: Sum 41 - In Too Deep.mp3
+Time: 207
+Artist: Sum 41
+AlbumArtist: Sum 41
+Title: In Too Deep
+Track: 7
+Date: 2001
+Genre: Blues
+Composer: Sum 41
+mtime: 1345826334
+song_end
+song_begin: Someday.m4a
+Time: 207
+Artist: Nikelback
+Title: Someday
+Track: 12/18
+Genre: Rock
+mtime: 1157275976
+song_end
+song_begin: Green Day - 21 Guns.mp3
+Time: 321
+Artist: Green Day
+AlbumArtist: Green Day
+Title: 21 Guns
+Album: 21st Century Breakdown
+Track: 16
+Date: 2009
+Genre: Rock
+Disc: 1/1
+mtime: 1336996234
+song_end
+song_begin: Salif Keita - Tomorrow.mp3
+Time: 312
+Artist: Salif Keita
+Title: Tomorrow
+Album: Ali The Original Soundtrack
+Genre: Soundtrack
+mtime: 1337134636
+song_end
+song_begin: Ben Lee - We're All In This Together.mp3
+Time: 279
+Artist: Ben Lee
+Title: Were All In This Together
+Album: Awake Is The New Sleep
+Track: 12
+Date: 2005
+Genre: Rock
+mtime: 1377120014
+song_end
+song_begin: Away From The Sun.mp3
+Time: 233
+Artist: 3 Doors Down
+AlbumArtist: 3 Doors Down
+Title: Away From The Sun
+Album: Away From The Sun
+Track: 2
+Date: 2002
+Genre: Rock
+Composer: Brad Arnold/C. "DJ Smooth" Henderson/Matt Roberts/Todd Harrell
+mtime: 1225817404
+song_end
+song_begin: Audio Network - Mars.mp3
+Time: 280
+Artist: II 9O21O II
+Title: Mars
+Album: Blockbuster Movie Trailers
+Track: 1
+mtime: 1345826590
+song_end
+song_begin: Nico Touches The Walls - Broken Youth.mp3
+Time: 295
+Artist: Nico Touches The Walls
+Title: Broken Youth
+Album: Broken Youth
+Track: 1
+Date: 2008
+Genre: Anime
+mtime: 1304171084
+song_end
+song_begin: Mario Vasquez- Gallery.mp3
+Time: 224
+Artist: Mario Vazquez
+AlbumArtist: Hugh Ragin
+Title: Gallery
+Album: Gallery
+Track: 1
+Date: 1998
+Genre: Jazz
+Composer: Marc Sabatella
+mtime: 1176214696
+song_end
+song_begin: 300 Violin Orchestra.mp3
+Time: 178
+Title: 300 Violin Orchestra
+Album: Hip Hop and RnB Instrmentals
+Track: 13
+Genre: Hip Hop/Rap
+mtime: 1333799992
+song_end
+song_begin: Aluto - Michi ~ to you all.mp3
+Time: 285
+Artist: Aluto
+Title: Michi ~ to you all
+Album: Michi ~ to you all
+Track: 1
+Date: 2007
+Genre: Anime
+mtime: 1304168910
+song_end
+song_begin: Linkin Park - Shadow Of The Day.mp3
+Time: 292
+Artist: Linkin Park
+Title: Shadow Of The Day
+Album: Minutes To Midnight
+Track: 05
+Date: 2007
+Genre: Rock
+mtime: 1205618382
+song_end
+song_begin: 02 Be My Escape.mp3
+Time: 241
+Artist: Relient K
+Title: Be My Escape
+Album: Mmhmm
+Track: 2/14
+Date: 2004
+Genre: Gospel & Religious
+Composer: Matthew Thiessen
+Disc: 1/1
+mtime: 1338238302
+song_end
+song_begin: Parade.mp3
+Time: 294
+Artist: CHABA
+Title: Parade
+Album: NARUTO BEST HIT COLLECTION 2
+Track: 12
+Date: 2006
+Genre: #NIPPONSEI @ IRC.RIZON.NET
+mtime: 1224729098
+song_end
+song_begin: Yellow Moon.mp3
+Time: 305
+Artist: Akeboshi
+Title: Yellow Moon
+Album: NARUTO BEST HIT COLLECTION 2
+Track: 13
+Date: 2006
+Genre: #NIPPONSEI @ IRC.RIZON.NET
+mtime: 1224729106
+song_end
+song_begin: Motohiro Hata  - Toumei Datta Sekai Version completa.mp3
+Time: 232
+Artist: Motohiro Hata
+Title: Toumei Datta Sekai
+Album: Naruto Shippuden
+Track: 7
+Date: 2010
+Genre: J Pop
+mtime: 1311378654
+song_end
+song_begin: Sign - Flow.mp3
+Time: 233
+Artist: Flow
+Title: Sign
+Album: Naruto Shippuuden 6th Opening
+mtime: 1304165480
+song_end
+song_begin: Wind.mp3
+Time: 221
+Artist: Akeboshi
+Title: Wind
+Album: Naruto: ED 1 - Stoned Town - Single
+Track: 1
+Date: 2003
+Genre: JPop
+Genre: JPop
+mtime: 1269189756
+song_end
+song_begin: Nami Kaze Satellite.mp3
+Time: 248
+Artist: Snorkel
+Title: Nami Kaze Satellite
+Album: Naturo OP 7
+Genre: Other
+mtime: 1136558194
+song_end
+song_begin: Paramore - When It Rains.mp3
+Time: 215
+Artist: Paramore
+Title: When It Rains
+Album: Riot!
+Track: 5
+Date: 2007
+Genre: Alternative
+mtime: 1325293052
+song_end
+song_begin: Seishun Kyousoukyoku.mp3
+Time: 287
+Artist: Sambomaster
+Title: Seishun Kyousoukyoku
+Album: Seishun Kyousoukyoku
+Track: 1
+Date: 2004
+Genre: #NIPPONSEI @ IRC.RIZON.NET
+mtime: 1101943620
+song_end
+song_begin: Nico Touches The Walls - Diver.mp3
+Time: 251
+Artist: NICO Touches the Walls
+Title: Diver
+Album: Single
+Track: 1
+Genre: Anime
+mtime: 1311378680
+song_end
+song_begin: Good life -  OneRepublic.mp3
+Time: 253
+Artist: OneRepublic
+Title: Good Life
+Album: Waking Up
+Track: 6/11
+Date: 2009-11-17
+Genre: Pop
+mtime: 1309042972
+song_end
+song_begin: Foo Fighter - Walk.mp3
+Time: 256
+Artist: Foo Fighters
+AlbumArtist: Foo Fighters
+Title: Walk
+Album: Wasting Light
+Track: 11
+Date: 2011
+Genre: Hard Rock
+mtime: 1345826096
+song_end
+song_begin: Breaking Benjamin - Rain.mp3
+Time: 205
+Artist: Breaking Benjamin
+AlbumArtist: Breaking Benjamin
+Title: Rain
+Album: We're Not Alone Here
+Track: 11
+Date: 2004
+Genre: AlternRock
+Composer: Ben Burnley/Billy Corgan/Breaking Benjamin
+mtime: 1288216524
+song_end
+song_begin: Broken - Lifehouse.mp3
+Time: 287
+Artist: Lifehouse
+Title: Broken
+Album: Who We Are
+Track: 5
+Date: 2007
+Genre: Rock
+mtime: 1309042850
+song_end
+song_begin: Lifehouse - Whatever It Takes.mp3
+Time: 207
+Artist: Lifehouse
+Title: Whatever It Takes
+Album: Who We Are
+Track: 3
+Date: 2007
+Genre: General Alternative
+Disc: 1
+mtime: 1309043720
+song_end
+song_begin: Akeboshi - Peruna.mp3
+Time: 238
+Artist: Akeboshi
+Title: Peruna
+Album: Yellow Moon
+Track: 2
+Date: 2006
+Genre: narutoUNLIMITED
+mtime: 1283604064
+song_end
+song_begin: Black Eyed Peas Ft Justin Timberlake - Where Is The Love.mp3
+Time: 228
+Artist: Black Eyed Peas Ft Justin Timberlake (www.mp3sfinder.com)
+Title: Where is the Love (CDS)
+Album: www.mp3sfinder.com
+Date: 2003
+Genre: Rap
+mtime: 1067431600
+song_end
+playlist_begin: Groovesalad.pls
+mtime: 1338912954
+playlist_end
+end: old_music
+song_begin: James Blunt - 1973.mp3
+Time: 242
+mtime: 1394294153
+song_end
+song_begin: Jason Marz - I'm Yours.mp3
+Time: 258
+mtime: 1417615375
+song_end
+song_begin: Jingle Bells.mp3
+Time: 106
+mtime: 1417031027
+song_end
+song_begin: Lights & Motion - Reanimation (Full Album).mp3
+Time: 4015
+mtime: 1394435322
+song_end
+song_begin: Milow - Ayo Technology.mp3
+Time: 216
+mtime: 1394278388
+song_end
+song_begin: Sonic - Medley - Super Guitar Bros.mp3
+Time: 522
+mtime: 1416734457
+song_end
+song_begin: Super Guitar Bros (Full Album).mp3
+Time: 2591
+mtime: 1403608789
+song_end
+song_begin: Wafia - Let Me Love You (prod. Thrupence)-OLRovuOleP0.mp3
+Time: 195
+mtime: 1417976268
+song_end

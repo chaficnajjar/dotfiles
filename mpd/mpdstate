@@ -1,0 +1,23 @@
+sw_volume: 99
+audio_device_state:1:My Pulse Output
+audio_device_state:1:my_fifo
+state: stop
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Lights & Motion - Reanimation (Full Album).mp3
+1:old_music/Akeboshi - Peruna.mp3
+2:old_music/Asian Kung-Fu Generation - Rewrite.mp3
+3:old_music/Audio Network - Mars.mp3
+4:old_music/Away From The Sun.mp3
+5:old_music/Nico Touches The Walls - Diver.mp3
+6:old_music/02 Be My Escape.mp3
+7:old_music/Akeboshi - Peruna.mp3
+8:old_music/Asian Kung-Fu Generation - Rewrite.mp3
+9:old_music/Green Day - 21 Guns.mp3
+playlist_end
