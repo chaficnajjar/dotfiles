@@ -111,8 +111,13 @@ fi
 # Set correct term for tmux so solarized theme works in vim
 alias tmux="TERM=screen-256color-bce tmux"
 
-# custom scripts
+# Custom scripts
 . /home/chafic/bin/z/z.sh
 export PATH="$HOME/bin:$PATH"
 
-function cl() { cd "$@"; ls -l; }
+# My aliases
+alias sudo='sudo '
+alias empty-trash='rm -rf ~/.local/share/Trash/*'
+alias explore='nautilus --no-desktop . & disown'
+alias todo='vim $HOME/documents/todo'
+alias idea='vim $HOME/projects/ideas'
