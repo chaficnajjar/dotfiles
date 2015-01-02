@@ -5,7 +5,7 @@ A collection of dot configurations.
 
 ## Installation
 
-#### Clone the repo
+### Clone the repo
 `git clone https://github.com/chaficnajjar/dotfiles.git ~/dotfiles`
 
 ### Create symlinks
