@@ -156,6 +156,7 @@ scriptencoding utf-8
 
 " Super efficient shortcut
 nnoremap ; :
+nnoremap : <NOP>
 
 " A new method go into insert mode 
 inoremap jk <ESC>
