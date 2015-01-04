@@ -36,8 +36,8 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
+#bindsym $mod+j focus down
+#bindsym $mod+k focus up
 bindsym $mod+l; focus right
 
 # move focused window
@@ -79,8 +79,8 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # Switch workspaces left/right
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
+bindsym $mod+k workspace next
+bindsym $mod+j workspace prev
 
 # switch to workspace
 bindsym $mod+1 workspace 1
