@@ -79,8 +79,8 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # Switch workspaces left/right
-bindsym $mod+k workspace next
-bindsym $mod+j workspace prev
+bindsym $mod+Next workspace next
+bindsym $mod+Prior workspace prev
 
 # switch to workspace
 bindsym $mod+1 workspace 1
