@@ -147,7 +147,10 @@ bindsym $mod+Return exec i3-sensible-terminal
 exec --no-startup-id nitrogen --restore             # Wallpaper
 exec --no-startup-id nm-applet                      # Network manager
 exec --no-startup-id unity-settings-daemon          # Unity settings
-exec --no-startup-id compton                        # Compton (composite manager)
+
+# Compton (composite manager)
+exec --no-startup-id compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc -b
+
 #exec redshift-gtk -l 33.89:35.51                    # redshift
 
 # System volume
