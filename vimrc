@@ -98,9 +98,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Buffer navigation
-map gn :bn<cr>
-map gp :bp<cr>
-map gd :bd<cr>
+noremap gn :bn<cr>
+noremap gp :bp<cr>
+noremap gd :bd<cr>
 
 " Stop indenting when pasting with the mouse
 set pastetoggle=<F5>
