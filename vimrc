@@ -158,9 +158,8 @@ scriptencoding utf-8
 nnoremap ; :
 nnoremap : <NOP>
 
-" Leave insert and visual mode
+" Leave insert mode
 inoremap jk <ESC>
-vnoremap jk <ESC> 
 
 vmap <C-c> "+yi
 vmap <C-x> "+c
