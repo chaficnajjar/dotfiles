@@ -160,3 +160,8 @@ nnoremap : <NOP>
 
 " A new method go into insert mode 
 inoremap jk <ESC>
+
+vmap <C-c> "+yi
+vmap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <C-r><C-o>+"
