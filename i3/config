@@ -180,6 +180,7 @@ bindsym $mod+Delete mode "$mode_system"
 focus_follows_mouse no
 
 # Launch in floating mode
+for_window [window_role="pop-up"] floating enable
 for_window [instance="gaia"] floating enable
 for_window [instance="totem"] floating enable
 for_window [instance="shotwell"] floating enable
