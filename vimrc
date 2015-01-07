@@ -102,6 +102,12 @@ noremap gn :bn<cr>
 noremap gp :bp<cr>
 noremap gd :bd<cr>
 
+" Avoid scrolling when switching buffers
+if v:version >= 700
+    au BufLeave * if !&diff | let b:winview = winsaveview() | endif
+    au BufEnter * if exists('b:winview') && !&diff | call winrestview(b:winview) | unlet! b:winview | endif
+endif
+
 " Stop indenting when pasting with the mouse
 set pastetoggle=<F5>
 
