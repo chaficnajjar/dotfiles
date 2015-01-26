@@ -1,0 +1,42 @@
+#!/bin/sh
+lock() {
+    i3lock -n -c 000000 \
+    --insidevercolor=000000ff \
+    --insidewrongcolor=000000ff \
+    --insidecolor=000000ff \
+    --ringvercolor=000000ff \
+    --ringwrongcolor=000000ff \
+    --ringcolor=000000ff \
+    --linecolor=aaaaaaff \
+    --textcolor=000000ff \
+    --keyhlcolor=ffffffff \
+    --bshlcolor=ff0000ff
+}
+
+case "$1" in
+    lock)
+        lock
+        ;;
+    logout)
+        i3-msg exit
+        ;;
+    suspend)
+        lock && systemctl suspend
+        ;;
+    hibernate)
+        lock && systemctl hibernate
+        ;;
+    reboot)
+        #systemctl reboot
+        gksudo "shutdown -r now"
+        ;;
+    shutdown)
+        #systemctl poweroff
+        gksudo "shutdown -h now"
+        ;;
+    *)
+        echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
+        exit 2
+esac
+
+exit 0

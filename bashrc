@@ -112,8 +112,8 @@ fi
 alias tmux="TERM=screen-256color-bce tmux"
 
 # Custom scripts
-. $HOME/bin/z/z.sh
-export PATH="$HOME/bin:$PATH"
+. $HOME/dotfiles/bin/z/z.sh
+export PATH="$HOME/dotfiles/bin:$PATH"
 
 # My aliases
 alias sudo='sudo '
