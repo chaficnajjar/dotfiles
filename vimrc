@@ -145,6 +145,11 @@ let mapleader=","
 " Goyo shortcut
 nnoremap <silent> <leader>z :Goyo<cr>
 
+" configure Goyo
+let g:goyo_width=140
+let g:goyo_margin_top=3
+let g:goyo_margin_bottom=3
+
 " Disable markdown highlight 
 autocmd VimEnter * highlight clear htmlItalic
 
