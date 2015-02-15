@@ -180,3 +180,6 @@ imap <C-v> <C-r><C-o>+"
 " CtrlP
 let g:ctrlp_custom_ignore = {
     \ 'file': '\.a$\|\.o$' }
+
+" Mappings
+:noremap <F2> :!xelatex %<CR>
