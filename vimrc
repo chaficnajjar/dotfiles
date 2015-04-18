@@ -183,3 +183,12 @@ let g:ctrlp_custom_ignore = {
 
 " Mappings
 :noremap <F2> :!xelatex %<CR>
+
+" Counting words in LaTeX documents
+function! WC()
+    let filename = expand("%")
+    let cmd = "detex " . filename . " | wc -w | tr -d [:space:]"
+    let result = system(cmd)
+    echo result . " words"
+endfunction
+command WC call WC()
