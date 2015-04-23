@@ -183,6 +183,7 @@ let g:ctrlp_custom_ignore = {
 
 " Mappings
 :noremap <F2> :!xelatex %<CR>
+:noremap <F3> :! g++ % -o %:r -std=c++11 && ./%:r<CR>
 
 " Counting words in LaTeX documents
 function! WC()
