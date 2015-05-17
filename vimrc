@@ -181,9 +181,10 @@ imap <C-v> <C-r><C-o>+"
 let g:ctrlp_custom_ignore = {
     \ 'file': '\.a$\|\.o$' }
 
-" Mappings
-:noremap <F2> :!xelatex %<CR>
-:noremap <F3> :! g++ % -o %:r -std=c++11 && ./%:r<CR>
+" Compilation shortcuts
+autocmd FileType tex noremap <F2> :!xelatex %<CR>
+autocmd FileType cpp noremap <F2> :! g++ % -o %:r -std=c++11 && ./%:r<CR>
+autocmd FileType java noremap <F2> :! javac % && java %:r<CR>
 
 " Counting words in LaTeX documents
 function! WC()
