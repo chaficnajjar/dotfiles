@@ -155,14 +155,13 @@ exec --no-startup-id i3-msg 'workspace 10; exec i3-sensible-terminal -e cmus'
 # Compton (composite manager)
 exec --no-startup-id compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc -b
 
-#exec redshift-gtk -l 33.89:35.51                    # redshift
-
 # System volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 -- +5% && killall -SIGUSR1 i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -- -5% && killall -SIGUSR1 i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && killall -SIGUSR1 i3status
 bindsym XF86AudioNext exec --no-startup-id cmus-remote -n
 bindsym XF86AudioPrev exec --no-startup-id cmus-remote -r
+bindsym XF86AudioPause exec --no-startup-id cmus-remote -u
 
 # Lock screen
 bindsym $mod+Ctrl+Shift+l exec $HOME/dotfiles/bin/lock
