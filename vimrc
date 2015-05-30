@@ -194,3 +194,6 @@ function! WC()
     echo result . " words"
 endfunction
 command WC call WC()
+
+" Set the cryptmethod to use the blowfish cipher (replace with blowfish2 when newer version of vim is installed).
+set cryptmethod=blowfish
