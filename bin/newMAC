@@ -1,0 +1,48 @@
+# I didn't write this script, George Zakhour did.
+
+#!/bin/bash
+# Default MAC Address eth0  00:1e:33:43:d7:5b
+# Default MAC Address wlan0  00:1f:3b:aa:20:05
+# This application requires macchanger to be installed
+
+
+# Function that returns a new MAC address
+# @return String    new MAC address
+function newMACaddress() {
+    # final mac address to use
+    local finalmac="00";
+    for i in $(seq 1 5)
+    do
+        # creating a new random number
+        r=$(( $RANDOM % 255 + 1 ));
+        # Converting the random number to hex
+        r=$(echo 'obase=16; '$r | bc);
+        # Convert the random hex to lowercase
+        r=$(echo $r | tr '[:upper:]' '[:lower:]');
+    
+        # Concatenate result
+        finalmac=$finalmac":"$r;
+    done
+    echo $finalmac;
+}
+
+eth0MAC=$(newMACaddress)
+echo "New mac address generated"
+
+# Change the mac address
+# turn off the ethernet
+sudo ifconfig wlan0 down;
+echo "Wireless card turned off"
+# change the mac address for eth0
+sudo ifconfig wlan0 hw ether $eth0MAC
+# turn on the wireless card and the ethernet
+echo "Mac address changed successfully"
+sudo ifconfig wlan0 up;
+echo "Wireless card turned on"
+# sudo /etc/init.d/networking restart
+
+# Restart the connection
+sudo dhclient wlan0
+echo "Reestablished connection with network"
+
+echo "Your new MAC address is $eth0MAC"
