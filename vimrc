@@ -124,9 +124,6 @@ set laststatus=2
 " NERDTree ignores all object files
 let NERDTreeIgnore = ['\.o$']
 
-" js-beautify
-map <c-f> :call JsBeautify()<cr>
-
 " remove toolbar in gvim
 set guioptions -=T
 
@@ -197,3 +194,10 @@ command WC call WC()
 
 " Set the cryptmethod to use the blowfish cipher (replace with blowfish2 when newer version of vim is installed).
 set cryptmethod=blowfish
+
+" Beautify
+autocmd FileType json noremap <F3> :%!python -m json.tool<cr>
+au BufNewFile,BufRead *.geojson set filetype=geojson
+autocmd FileType geojson noremap <F3> :%!python -m json.tool<cr>
+autocmd FileType javascript noremap <F3> :call JsBeautify()<cr>
+
