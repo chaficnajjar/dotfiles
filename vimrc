@@ -195,9 +195,17 @@ command WC call WC()
 " Set the cryptmethod to use the blowfish cipher (replace with blowfish2 when newer version of vim is installed).
 set cryptmethod=blowfish
 
-" Beautify
+" Beautify.
 autocmd FileType json noremap <F3> :%!python -m json.tool<cr>
 au BufNewFile,BufRead *.geojson set filetype=geojson
 autocmd FileType geojson noremap <F3> :%!python -m json.tool<cr>
 autocmd FileType javascript noremap <F3> :call JsBeautify()<cr>
 
+" Remove trailing whitespace.
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
