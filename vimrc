@@ -29,7 +29,7 @@ set cursorline
 autocmd InsertEnter,InsertLeave * set cul!
 
 " Incremental search
-set incsearch 
+set incsearch
 
 "This actually loads the file ftplugin.vim in runtimepath.
 "The result is that when a file is edited its plugin file is loaded
@@ -39,7 +39,7 @@ filetype plugin on
 " convert tabs to spaces
 if has("autocmd")
     au BufReadPost * if &modifiable | retab | endif
-endif 
+endif
 
 " Indentation
 set autoindent      " set the cursor at same indent as line above
@@ -51,7 +51,7 @@ set softtabstop=4   " with expandtab enabled, allows deleting 4 spaces
 set expandtab       " turns TAB into 4 spaces
 
 " This actually loads the file indent.vim in 'runtimepath'.
-" The result is that when a file is edited its indent file is loaded 
+" The result is that when a file is edited its indent file is loaded
 " (if there is one for the detected filetype).
 filetype indent on
 
@@ -88,7 +88,7 @@ noremap <left> <nop>
 inoremap <right> <nop>
 noremap <right> <nop>
 
-" Curly brace + enter key = proper indentation 
+" Curly brace + enter key = proper indentation
 inoremap {<CR> {<CR>}<C-o>O
 
 " Windows navigation
@@ -133,7 +133,7 @@ set guioptions -=r
 " remove left scrollbar
 set guioptions -=L
 
-" break search after reaching last found item 
+" break search after reaching last found item
 set nowrapscan
 
 " set leader key to ,
@@ -147,7 +147,7 @@ let g:goyo_width=140
 let g:goyo_margin_top=3
 let g:goyo_margin_bottom=3
 
-" Disable markdown highlight 
+" Disable markdown highlight
 autocmd VimEnter * highlight clear htmlItalic
 
 " Enable syntax highlighting for .md files
