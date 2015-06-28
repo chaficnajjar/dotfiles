@@ -124,15 +124,6 @@ set laststatus=2
 " NERDTree ignores all object files
 let NERDTreeIgnore = ['\.o$']
 
-" remove toolbar in gvim
-set guioptions -=T
-
-" remove right scrollbar
-set guioptions -=r
-
-" remove left scrollbar
-set guioptions -=L
-
 " break search after reaching last found item
 set nowrapscan
 
