@@ -160,9 +160,12 @@ exec --no-startup-id compton --backend glx --paint-on-overlay --glx-no-stencil -
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 -- +5% && killall -SIGUSR1 i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -- -5% && killall -SIGUSR1 i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && killall -SIGUSR1 i3status
-bindsym XF86AudioNext exec --no-startup-id cmus-remote -n
 bindsym XF86AudioPrev exec --no-startup-id cmus-remote -r
+bindsym F8 exec --no-startup-id cmus-remote -r
 bindsym XF86AudioPause exec --no-startup-id cmus-remote -u
+bindsym F9 exec --no-startup-id cmus-remote -u
+bindsym XF86AudioNext exec --no-startup-id cmus-remote -n
+bindsym F10 exec --no-startup-id cmus-remote -n
 
 # Toggle touchpad
 bindsym XF86TouchpadToggle exec --no-startup-id $HOME/dotfiles/bin/toggletouchpad
