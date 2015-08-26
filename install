@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files="bashrc vimrc gvimrc vim gtkrc-2.0 tmux.conf i3 i3status.conf ncmpcpp mpd"
+files="bashrc zshrc vimrc gvimrc vim gtkrc-2.0 tmux.conf i3 i3status.conf ncmpcpp mpd"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # clean and backup
