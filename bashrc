@@ -111,6 +111,9 @@ fi
 # Set correct term for tmux so solarized theme works in vim
 alias tmux="TERM=screen-256color-bce tmux"
 
+# Set default GPG key.
+export GPGKEY=33863E8C
+
 # Custom scripts
 . $HOME/dotfiles/bin/z/z.sh
 export PATH="$HOME/dotfiles/bin:$PATH"
@@ -124,3 +127,4 @@ alias ideas='vim $HOME/projects/ideas'
 
 # Fix terminal issue with displaying gruvbox colors properly
 ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
+source /etc/bash_completion.d/password-store
