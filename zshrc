@@ -48,7 +48,7 @@ alias sudo='sudo '
 alias empty-trash='rm -rf ~/.local/share/Trash/*'
 alias explore='nautilus --no-desktop . & disown'
 alias todo='vim $HOME/documents/todo'
-alias idea='vim $HOME/projects/ideas'
+alias ideas='vim $HOME/projects/ideas'
 
 # Fix terminal issue with displaying gruvbox colors properly.
 ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
