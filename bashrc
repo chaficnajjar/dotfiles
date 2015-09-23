@@ -127,4 +127,6 @@ alias ideas='vim $HOME/projects/ideas'
 
 # Fix terminal issue with displaying gruvbox colors properly
 ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
-source /etc/bash_completion.d/password-store
+
+# Bash completion for pass. Uncomment when using Ubuntu.
+#source /etc/bash_completion.d/password-store
