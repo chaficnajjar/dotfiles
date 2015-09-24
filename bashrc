@@ -134,3 +134,6 @@ alias ideas='vim $HOME/projects/ideas'
 
 # Path to binaries installed with gem.
 export PATH="$PATH:$HOME/.gem/ruby/2.2.0/bin"
+
+# Make vim the default editor. Now, 'sudoedit' will open vim.
+export EDITOR="vim"
