@@ -116,9 +116,10 @@ export GPGKEY=33863E8C
 
 # Custom scripts
 . $HOME/dotfiles/bin/z/z.sh
-export PATH="$HOME/dotfiles/bin:$PATH"
+export PATH="$PATH:$HOME/dotfiles/bin"
 
 # My aliases
+alias vi='vim'
 alias sudo='sudo '
 alias empty-trash='rm -rf ~/.local/share/Trash/*'
 alias explore='nautilus --no-desktop . & disown'
@@ -130,3 +131,6 @@ alias ideas='vim $HOME/projects/ideas'
 
 # Bash completion for pass. Uncomment when using Ubuntu.
 #source /etc/bash_completion.d/password-store
+
+# Path to binaries installed with gem.
+export PATH="$PATH:$HOME/.gem/ruby/2.2.0/bin"
