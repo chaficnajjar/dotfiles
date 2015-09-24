@@ -137,3 +137,6 @@ export PATH="$PATH:$HOME/.gem/ruby/2.2.0/bin"
 
 # Make vim the default editor. Now, 'sudoedit' will open vim.
 export EDITOR="vim"
+
+# Set "ARCH" variable (either x86_64 or i686).
+export ARCH=$(uname -m)
