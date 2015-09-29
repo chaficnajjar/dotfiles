@@ -2,3 +2,7 @@ style "vimfix" {
       bg[NORMAL] = "#242424" # this matches my gvim theme 'Normal' bg color.
 }
 widget "vim-main-window.*GtkForm" style "vimfix"
+
+gtk-icon-theme-name = "Adwaita"
+gtk-them-name = "Adwaita"
+gtk-font-name = "DejaVu Sans 11"

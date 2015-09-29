@@ -116,9 +116,10 @@ export GPGKEY=33863E8C
 
 # Custom scripts
 . $HOME/dotfiles/bin/z/z.sh
-export PATH="$HOME/dotfiles/bin:$PATH"
+export PATH="$PATH:$HOME/dotfiles/bin"
 
 # My aliases
+alias vi='vim'
 alias sudo='sudo '
 alias empty-trash='rm -rf ~/.local/share/Trash/*'
 alias explore='nautilus --no-desktop . & disown'
@@ -127,4 +128,15 @@ alias ideas='vim $HOME/projects/ideas'
 
 # Fix terminal issue with displaying gruvbox colors properly
 ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
-source /etc/bash_completion.d/password-store
+
+# Bash completion for pass. Uncomment when using Ubuntu.
+#source /etc/bash_completion.d/password-store
+
+# Path to binaries installed with gem.
+export PATH="$PATH:$HOME/.gem/ruby/2.2.0/bin"
+
+# Make vim the default editor. Now, 'sudoedit' will open vim.
+export EDITOR="vim"
+
+# Set "ARCH" variable (either x86_64 or i686).
+export ARCH=$(uname -m)
