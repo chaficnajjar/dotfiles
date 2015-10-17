@@ -154,7 +154,7 @@ exec --no-startup-id i3-msg 'workspace 10; exec i3-sensible-terminal -e cmus'
 exec redshift-gtk -l 33.89:35.51 -c ~/.config/redshift.conf
 
 # Compton (composite manager).
-exec --no-startup-id compton --backend glx --paint-on-overlay --glx-no-stencil --vsync opengl-swc -b
+exec --no-startup-id compton -b
 
 # Enable multimedia keys and hotkeys.
 exec --no-startup-id xbindkeys
