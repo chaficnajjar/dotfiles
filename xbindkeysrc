@@ -22,4 +22,10 @@
 "cmus-remote -u"
     Mod2+Mod4 + c
 
-#bindsym XF86TouchpadToggle exec --no-startup-id $HOME/dotfiles/bin/toggletouchpad
+# Increase screen backlight.
+"xbacklight -inc 10"
+    XF86MonBrightnessUp
+
+# Decrease screen backlight.
+"xbacklight -dec 10"
+    XF86MonBrightnessDown
