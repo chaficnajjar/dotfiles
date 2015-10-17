@@ -1,0 +1,25 @@
+# Increase volume by 5%
+"amixer -c 1 set Master 5+ && killall -SIGUSR1 i3status"
+    XF86AudioRaiseVolume
+
+# Decrease volume by 5%
+"amixer -c 1 set Master 5- && killall -SIGUSR1 i3status"
+    XF86AudioLowerVolume
+
+# Toggle volume
+"amixer -D pulse set Master 1+ toggle && killall -SIGUSR1 i3status"
+    XF86AudioMute
+
+# Next track.
+"cmus-remote -n"
+    Mod2+Mod4 + b
+
+# Previous track.
+"cmus-remote -r"
+    Mod2+Mod4 + z
+
+# Play/Pause track.
+"cmus-remote -u"
+    Mod2+Mod4 + c
+
+#bindsym XF86TouchpadToggle exec --no-startup-id $HOME/dotfiles/bin/toggletouchpad
