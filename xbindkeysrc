@@ -1,12 +1,12 @@
-# Increase volume by 5%
+# Increase volume by 5%.
 "amixer -c 1 set Master 5+ && killall -SIGUSR1 i3status"
     XF86AudioRaiseVolume
 
-# Decrease volume by 5%
+# Decrease volume by 5%.
 "amixer -c 1 set Master 5- && killall -SIGUSR1 i3status"
     XF86AudioLowerVolume
 
-# Toggle volume
+# Toggle speaker.
 "amixer -D pulse set Master 1+ toggle && killall -SIGUSR1 i3status"
     XF86AudioMute
 
@@ -29,3 +29,7 @@
 # Decrease screen backlight.
 "xbacklight -dec 10"
     XF86MonBrightnessDown
+
+# Toggle microphone.
+"amixer set Capture toggle"
+    XF86AudioMicMute
