@@ -55,3 +55,6 @@ alias ideas='vim $HOME/projects/ideas'
 
 # Set default GPG key.
 export GPGKEY=33863E8C
+
+# Make vim the default editor. Now, 'sudoedit' will open vim.
+export EDITOR="vim"
