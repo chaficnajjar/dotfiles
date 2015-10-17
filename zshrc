@@ -58,3 +58,6 @@ export GPGKEY=33863E8C
 
 # Make vim the default editor. Now, 'sudoedit' will open vim.
 export EDITOR="vim"
+
+# Set "ARCH" variable (either x86_64 or i686).
+export ARCH=$(uname -m)
