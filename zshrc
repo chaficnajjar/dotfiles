@@ -44,6 +44,7 @@ alias tmux="TERM=screen-256color-bce tmux"
 export PATH="$HOME/dotfiles/bin:$PATH"
 
 # My aliases
+alias vi='vim'
 alias sudo='sudo '
 alias empty-trash='rm -rf ~/.local/share/Trash/*'
 alias explore='nautilus --no-desktop . & disown'
