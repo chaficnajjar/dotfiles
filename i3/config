@@ -153,6 +153,9 @@ exec --no-startup-id i3-msg 'workspace 9; exec i3-sensible-terminal -e "vim $HOM
 exec --no-startup-id i3-msg 'workspace 10; exec i3-sensible-terminal -e cmus'
 exec redshift-gtk -l 33.89:35.51 -c ~/.config/redshift.conf
 
+# Typematic delay and rate.
+exec --no-startup-id xset r rate 200 30
+
 # Compton (composite manager).
 exec --no-startup-id compton -b
 
