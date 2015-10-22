@@ -61,3 +61,5 @@ export EDITOR="vim"
 
 # Set "ARCH" variable (either x86_64 or i686).
 export ARCH=$(uname -m)
+
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
