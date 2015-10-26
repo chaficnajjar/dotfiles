@@ -33,3 +33,7 @@
 # Toggle microphone.
 "amixer set Capture toggle"
     XF86AudioMicMute
+
+# Take snapshot.
+"ksnapshot"
+    Print
