@@ -199,8 +199,9 @@ new_float pixel 3
 bar {
   position          top
   status_command    i3status
+  separator_symbol " :::::: "
   colors {
-    separator #EBDBB2
+    separator #D79921
     background #282828
     statusline #EBDBB2
     focused_workspace #458588 #458588 #EBDBB2
