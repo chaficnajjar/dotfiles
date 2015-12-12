@@ -15,3 +15,6 @@ set guioptions-=m
 
 " Block cursor in insert mode.
 set guicursor=i:block-Cursor
+
+" Cursor blinking rate.
+set guicursor=a:blinkon600-blinkoff600
