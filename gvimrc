@@ -11,4 +11,7 @@ set guioptions -=r
 set guioptions -=L
 
 " Remove menu bar.
-:set guioptions-=m
+set guioptions-=m
+
+" Block cursor in insert mode.
+set guicursor=i:block-Cursor
