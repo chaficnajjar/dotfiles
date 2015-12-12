@@ -1,11 +1,14 @@
 set gfn=Source\ Code\ Pro\ for\ Powerline\ Medium\ 9
 :autocmd BufNewFile,BufRead * :cd %:p:h
 
-" remove toolbar in gvim
+" Remove toolbar in gvim.
 set guioptions -=T
 
-" remove right scrollbar
+" Remove right scrollbar.
 set guioptions -=r
 
-" remove left scrollbar
+" Remove left scrollbar.
 set guioptions -=L
+
+" Remove menu bar.
+:set guioptions-=m
