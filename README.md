@@ -12,6 +12,5 @@ A collection of dot configurations on my [Lenovo T450s](http://shop.lenovo.com/g
 
 ### Fetch submodules
 ```
-git submodule init
-git submodule update
+git submodule update --init --recursive
 ```
