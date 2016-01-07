@@ -163,9 +163,6 @@ exec --no-startup-id compton -b
 # Enable multimedia keys and hotkeys.
 exec --no-startup-id xbindkeys
 
-# Lock screen
-bindsym $mod+Ctrl+Shift+l exec $HOME/dotfiles/bin/lock
-
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3exit lock, mode "default"
