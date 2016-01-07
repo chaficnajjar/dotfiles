@@ -35,5 +35,5 @@
     XF86AudioMicMute
 
 # Take snapshot.
-"ksnapshot"
+"spectacle"
     Print
