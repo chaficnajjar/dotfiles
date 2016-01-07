@@ -132,6 +132,9 @@ alias ideas='vim $HOME/projects/ideas'
 # Bash completion for pass. Uncomment when using Ubuntu.
 #source /etc/bash_completion.d/password-store
 
+# Activates CTRL+SHIFT+n in gnome terminal.
+source /etc/profile.d/vte.sh
+
 # Path to binaries installed with gem.
 export PATH="$PATH:$HOME/.gem/ruby/2.2.0/bin"
 

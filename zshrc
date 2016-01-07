@@ -89,6 +89,9 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
+# Activates CTRL+SHIFT+n in gnome terminal.
+source /etc/profile.d/vte.sh
+
 # My aliases.
 alias empty-trash='rm -rf ~/.local/share/Trash/*'
 alias explore='nautilus --no-desktop . & disown'
