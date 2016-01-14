@@ -99,7 +99,8 @@ alias ideas='vim $HOME/projects/ideas'
 alias tmux="TERM=screen-256color-bce tmux"  # Set correct term for tmux so solarized theme works in vim.
 alias sudo='sudo '
 alias todo='vim $HOME/documents/todo'
-alias vi='vim'
+alias vi='nvim'
+alias vim='echo "use vi"'
 
 ~/.vim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
 . $HOME/dotfiles/bin/z/z.sh

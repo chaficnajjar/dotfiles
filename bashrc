@@ -119,7 +119,8 @@ export GPGKEY=33863E8C
 export PATH="$PATH:$HOME/dotfiles/bin"
 
 # My aliases
-alias vi='vim'
+alias vi='nvim'
+alias vim='echo "use vi"'
 alias sudo='sudo '
 alias empty-trash='rm -rf ~/.local/share/Trash/*'
 alias explore='nautilus --no-desktop . & disown'
