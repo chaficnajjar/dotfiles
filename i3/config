@@ -186,6 +186,7 @@ for_window [window_role="pop-up"] floating enable
 for_window [instance="gaia"] floating enable
 for_window [instance="totem"] floating enable
 for_window [instance="shotwell"] floating enable
+for_window [instance="feh"] floating enable
 for_window [class="Nautilus" instance="file_progress"] floating enable
 for_window [class="Dolphin" title="(Copying.*)|(Moving.*)|(Progress Dialog)"] floating enable
 
