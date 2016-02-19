@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Create output directory only if it does not already exist.
+mkdir -p output;
+
+cd "$1";
+
+for jpg in *.jpg; do
+    jpegoptim --force --verbose --totals "$jpg" --dest="$2";
+done
