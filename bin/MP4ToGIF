@@ -1,0 +1,10 @@
+#!/bin/bash
+# Author: Chafic Najjar <chafic.najjar@gmail.com>
+
+width=`ffmpeg -i screencast.mp4 2>&1 | grep Stream | grep -oP ', \K[0-9]+x[0-9]+' | cut -f1 -d"x"`
+
+ffmpeg -y -i screencast.mp4 -vf fps=32,scale=$width:-1:flags=lanczos,palettegen palette.png
+
+ffmpeg -i screencast.mp4 -i palette.png -filter_complex "fps=32,scale=$width:-1:flags=lanczos[x];[x][1:v]paletteuse" output2.gif
+
+rm palette.png
