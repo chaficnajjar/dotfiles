@@ -146,7 +146,6 @@ bindsym $mod+r mode "resize"
 # Start a terminal.
 bindsym $mod+Return exec i3-sensible-terminal
 
-exec --no-startup-id nitrogen --restore             # Wallpaper.
 exec --no-startup-id nm-applet                      # Network manager.
 exec --no-startup-id unity-settings-daemon          # Unity settings.
 exec --no-startup-id i3-msg 'workspace 9; exec i3-sensible-terminal -e "vim $HOME/documents/todo"'
