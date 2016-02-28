@@ -1,4 +1,4 @@
 #!/bin/bash
 # Author: Chafic Najjar <chafic.najjar@gmail.com>
 
-feh -g 640x480 -d -S filename "$1"
+feh -g 640x480 -d -S filename "$@"
