@@ -153,6 +153,7 @@ exec --no-startup-id i3-msg 'workspace 9; exec i3-sensible-terminal -e "vim $HOM
 exec --no-startup-id i3-msg 'workspace 10; exec i3-sensible-terminal -e cmus'
 exec redshift-gtk -l 33.89:35.51 -c ~/.config/redshift.conf
 exec $HOME/dotfiles/bin/i3_status_multiple_batteries
+exec $HOME/dotfiles/bin/random-wallpaper
 
 # Typematic delay and rate.
 exec --no-startup-id xset r rate 200 30
