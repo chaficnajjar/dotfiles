@@ -93,21 +93,23 @@ source $ZSH/oh-my-zsh.sh
 source /etc/profile.d/vte.sh
 
 # My aliases.
+alias vi='nvim'
 alias empty-trash='rm -rf ~/.local/share/Trash/*'
 alias explore='nautilus --no-desktop . & disown'
-alias ideas='vim $HOME/projects/ideas'
-alias tmux="TERM=screen-256color-bce tmux"  # Set correct term for tmux so solarized theme works in vim.
+alias ideas='vi $HOME/projects/ideas'
+alias tmux="TERM=screen-256color-bce tmux"  # Set correct term for tmux so solarized theme works in NeoVim.
 alias sudo='sudo '
-alias todo='vim $HOME/documents/todo'
-alias vi='nvim'
-alias vim='echo "use vi"'
+alias todo='vi $HOME/documents/todo'
 
 ~/.vim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
 . $HOME/dotfiles/bin/z/z.sh
 export GPGKEY=33863E8C  # Set default GPG key.
-export EDITOR="vim"     # Make vim the default editor. Now, 'sudoedit' will open vim.
+export EDITOR="vi"      # Make NeoVim the default editor. Now, 'sudoedit' will open NeoVim.
 export ARCH=$(uname -m) # Set "ARCH" variable (either x86_64 or i686).
 export PATH="$HOME/dotfiles/bin:$PATH"
+export PATH="$PATH:$HOME/.gem/ruby/2.3.0/bin"
 
 # Start Xorg on startup.
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+
+eval $(thefuck --alias)

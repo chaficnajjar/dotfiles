@@ -108,26 +108,25 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Set correct term for tmux so solarized theme works in vim
+# Set correct term for tmux so solarized theme works in NeoVim.
 alias tmux="TERM=screen-256color-bce tmux"
 
 # Set default GPG key.
 export GPGKEY=33863E8C
 
-# Custom scripts
+# Custom scripts.
 . $HOME/dotfiles/bin/z/z.sh
 export PATH="$PATH:$HOME/dotfiles/bin"
 
-# My aliases
+# My aliases.
 alias vi='nvim'
-alias vim='echo "use vi"'
 alias sudo='sudo '
 alias empty-trash='rm -rf ~/.local/share/Trash/*'
 alias explore='nautilus --no-desktop . & disown'
-alias todo='vim $HOME/documents/todo'
-alias ideas='vim $HOME/projects/ideas'
+alias todo='vi $HOME/documents/todo'
+alias ideas='vi $HOME/projects/ideas'
 
-# Fix terminal issue with displaying gruvbox colors properly
+# Fix terminal issue with displaying gruvbox colors properly.
 ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
 
 # Bash completion for pass. Uncomment when using Ubuntu.
@@ -137,10 +136,10 @@ alias ideas='vim $HOME/projects/ideas'
 source /etc/profile.d/vte.sh
 
 # Path to binaries installed with gem.
-export PATH="$PATH:$HOME/.gem/ruby/2.2.0/bin"
+export PATH="$PATH:$HOME/.gem/ruby/2.3.0/bin"
 
-# Make vim the default editor. Now, 'sudoedit' will open vim.
-export EDITOR="vim"
+# Make NeoVim the default editor. Now, 'sudoedit' will open NeoVim
+export EDITOR="vi"
 
 # Set "ARCH" variable (either x86_64 or i686).
 export ARCH=$(uname -m)
