@@ -5,6 +5,6 @@ mkdir -p "$2";
 
 cd "$1";
 
-for png in *.png; do
+for png in *.png *.PNG; do
     pngcrush -reduce -brute "$png" ../"$2"/"$png";
 done

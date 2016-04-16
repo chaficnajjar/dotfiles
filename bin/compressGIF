@@ -5,6 +5,6 @@ mkdir -p "$2";
 
 cd "$1";
 
-for gif in *.gif; do
+for gif in *.gif *.GIF; do
     gifsicle --batch --optimize=3 "$gif" -o ../"$2"/"$gif"
 done
