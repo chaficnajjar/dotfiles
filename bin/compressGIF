@@ -1,10 +1,15 @@
 #!/bin/bash
+# This script assumes there is no whitespace in file names.
 
-# Create output directory only if it does not already exist.
+# Creates output directory if it does not already exist.
 mkdir -p "$2";
 
-cd "$1";
+for gif in $(find "$1" -name "*.gif" -or -name "*.GIF"); do
+    output_file_path="$2/$gif";
 
-for gif in *.gif *.GIF; do
-    gifsicle --batch --optimize=3 "$gif" -o ../"$2"/"$gif"
+    # Create directories present in the output file path if they do not already exist.
+    output_file_directory_path=$(dirname "${output_file_path}");
+    mkdir -p "$output_file_directory_path";
+
+    gifsicle --batch --optimize=3 "$gif" -o "$output_file_path"
 done

@@ -1,10 +1,15 @@
 #!/bin/bash
+# This script assumes there is no whitespace in file names.
 
-# Create output directory only if it does not already exist.
+# Creates output directory if it does not already exist.
 mkdir -p "$2";
 
-cd "$1";
+for jpg in $(find "$1" -name "*.jpg" -or -name "*.JPG" -or -name "*.jpeg" -or -name "*.JPEG"); do
+    output_file_path="$2/$jpg";
 
-for jpg in *.jpg *.JPG *.jpeg *.JPEG; do
-    jpegoptim --force --verbose --totals "$jpg" --dest="../$2";
+    # Create directories present in the output file path if they do not already exist.
+    output_file_directory_path=$(dirname "${output_file_path}");
+    mkdir -p "$output_file_directory_path";
+
+    jpegoptim --force --verbose --totals "$jpg" --dest="$output_file_directory_path";
 done

@@ -1,10 +1,15 @@
 #!/bin/bash
+# This script assumes there is no whitespace in file names.
 
-# Create output directory only if it does not already exist.
+# Creates output directory if it does not already exist.
 mkdir -p "$2";
 
-cd "$1";
+for png in $(find "$1" -name "*.png" -or -name "*.PNG"); do
+    output_file_path="$2/$png";
 
-for png in *.png *.PNG; do
-    pngcrush -reduce -brute "$png" ../"$2"/"$png";
+    # Create directories present in the output file path if they do not already exist.
+    output_file_directory_path=$(dirname "${output_file_path}");
+    mkdir -p "$output_file_directory_path";
+
+    pngcrush -reduce -brute "$png" "$output_file_path";
 done
