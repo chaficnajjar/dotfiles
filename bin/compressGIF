@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Create output directory only if it does not already exist.
+mkdir -p "$2";
+
+cd "$1";
+
+for gif in *.gif; do
+    gifsicle --batch --optimize=3 "$gif" -o ../"$2"/"$gif"
+done
