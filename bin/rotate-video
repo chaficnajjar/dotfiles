@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ffmpeg -i "$1" -vf "hflip" -codec:a copy -codec:v libx264 -preset veryslow "$2"
