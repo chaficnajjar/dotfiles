@@ -1,3 +1,8 @@
 #!/bin/bash
 
-unrar x "$1"
+filename=$(basename "$1");
+filename="${filename%.*}";
+
+mkdir "$filename";
+
+unrar e "$1" "$filename";
