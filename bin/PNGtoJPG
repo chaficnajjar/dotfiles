@@ -1,0 +1,4 @@
+#!/bin/bash
+# Converts all PNG images to JPG images.
+
+mogrify -format jpg *.png
