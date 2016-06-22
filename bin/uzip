@@ -1,6 +1,9 @@
 #!/bin/bash
 
-filename=$(basename "$1")
-filename="${filename%.*}"
+for arg in "$@"
+do
+    filename=$(basename "$arg");
+    filename="${filename%.*}";
 
-unzip -d "$filename" "$1"
+    unzip -d "$filename" "$arg";
+done
