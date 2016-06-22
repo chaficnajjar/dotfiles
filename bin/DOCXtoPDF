@@ -1,0 +1,3 @@
+#!/bin/bash
+
+lowriter --convert-to pdf "$1";
