@@ -148,6 +148,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 exec --no-startup-id nm-applet                      # Network manager.
 exec --no-startup-id unity-settings-daemon          # Unity settings.
+exec --no-startup-id i3-battery-popup               # Battery warning popup.
 exec --no-startup-id i3-msg 'workspace 9; exec i3-sensible-terminal -e "vim $HOME/documents/todo"'
 exec --no-startup-id i3-msg 'workspace 10; exec i3-sensible-terminal -e cmus'
 exec redshift-gtk -l 33.89:35.51 -c ~/.config/redshift.conf
