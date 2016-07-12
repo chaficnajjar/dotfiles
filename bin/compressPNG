@@ -4,6 +4,10 @@
 # Creates output directory if it does not already exist.
 mkdir -p "$2";
 
+# Add support for spaces in file names.
+OIFS="$IFS"
+IFS=$'\n'
+
 for png in $(find "$1" -name "*.png" -or -name "*.PNG"); do
     output_file_path="$2/$png";
 
@@ -13,3 +17,5 @@ for png in $(find "$1" -name "*.png" -or -name "*.PNG"); do
 
     pngcrush -reduce -brute "$png" "$output_file_path";
 done
+
+IFS="$OIFS"

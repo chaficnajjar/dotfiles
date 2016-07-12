@@ -4,6 +4,10 @@
 # Creates output directory if it does not already exist.
 mkdir -p "$2";
 
+# Add support for spaces in file names.
+OIFS="$IFS"
+IFS=$'\n'
+
 for gif in $(find "$1" -name "*.gif" -or -name "*.GIF"); do
     output_file_path="$2/$gif";
 
@@ -13,3 +17,5 @@ for gif in $(find "$1" -name "*.gif" -or -name "*.GIF"); do
 
     gifsicle --batch --optimize=3 "$gif" -o "$output_file_path"
 done
+
+IFS="$OIFS"

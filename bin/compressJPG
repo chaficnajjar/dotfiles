@@ -4,6 +4,10 @@
 # Creates output directory if it does not already exist.
 mkdir -p "$2";
 
+# Add support for spaces in file names.
+OIFS="$IFS"
+IFS=$'\n'
+
 for jpg in $(find "$1" -name "*.jpg" -or -name "*.JPG" -or -name "*.jpeg" -or -name "*.JPEG"); do
     output_file_path="$2/$jpg";
 
@@ -13,3 +17,5 @@ for jpg in $(find "$1" -name "*.jpg" -or -name "*.JPG" -or -name "*.jpeg" -or -n
 
     jpegoptim --force --verbose --totals "$jpg" --dest="$output_file_directory_path";
 done
+
+IFS="$OIFS"
