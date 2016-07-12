@@ -1,5 +1,4 @@
 #!/bin/bash
-# This script assumes there is no whitespace in file names.
 
 # Creates output directory if it does not already exist.
 mkdir -p "$2";
