@@ -1,12 +1,18 @@
 # Custom scripts
 
-Custom scripts written in Bash to get things done, fast.
+Bash scripts to get things done, fast.
 
-## Dependencies
+## Description
 
-## Usage
+### Snippet
+
++ *snippet* snips the last 10 seconds of several MP4 files and merges them together into one file. **The output directory is ~/output/**.
+    + Dependencies: [avconv](http://libav.org/) and [MP4Box](http://gpac.wp.mines-telecom.fr/mp4box/).
+    + Usage: `./snippet path/to/input/directory`
 
 ## Bugs
+
+*snippet*: I tried having avconv keep the same codecs during the snipping using `-vcodec copy -acodec copy` right after `-ss $((${array[$i]}-10)) -t 10` but it resulted in broken videos for some reason.
 
 ## License and Credits
 

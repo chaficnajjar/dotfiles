@@ -1,0 +1,56 @@
+#!/bin/bash
+# Author: Chafic Najjar <chafic.najjar@gmail.com>
+
+output_directory="$HOME/output"
+
+# Create output directory only if it doesn't exist.
+if [ -d "$output_directory" ]; then
+    echo "~/output/ already exists"
+    rm -rf "$output_directory"
+    echo "Removed ~/output/"
+fi
+
+echo "Created ~/output/"
+mkdir "$output_directory"
+
+# Go to specified input directory (argument passed when program was executed).
+cd "$1"
+
+# Find the durations of all mp4 files and store in file "durations".
+find . -name "*.mp4" | sort -V |
+    sed "s/'/\\\'/g" |\
+    sed 's/"/\\"/g' |\
+    xargs -I{} avprobe {} 2>&1 |\
+    grep "Duration" |\
+    cut -d ' ' -f 4 |\
+    sed s/,// |\
+    awk '{ split($1, A, ":"); split(A[3], B, "."); print 3600*A[1] + 60*A[2] + B[1] }' >> "$output_directory/durations"
+
+# Store the durations in an array.
+i=0
+array=()
+while read p; do
+    array+=("$p")
+    i=$((i+1))
+done < "$output_directory/durations"
+
+find . -name "*.mp4" | sort -V > "$output_directory/file_names"
+
+# Trim the videos.
+i=0
+mkdir "$output_directory/temp"
+while read p; do
+    q=$(echo "$p" | rev | cut -d'/' -f1 | rev)
+    avconv -i "$p" -ss $((${array[$i]}-10)) -t 10 "$output_directory/temp/$q"
+    i=$((i+1))
+done < "$output_directory/file_names"
+
+# Join videos.
+while read p; do
+    q=$(echo "$p" | rev | cut -d'/' -f1 | rev)
+    MP4Box -cat "$output_directory/temp/$q" "$output_directory/output.mp4"
+done < "$output_directory/file_names"
+
+# Remove temporary files.
+rm "$output_directory/durations"
+rm "$output_directory/file_names"
