@@ -102,11 +102,12 @@ alias sudo='sudo '
 alias todo='vi $HOME/documents/todo'
 
 ~/.vim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
-. $HOME/dotfiles/bin/z/z.sh
+. $HOME/bin/z/z.sh
 export GPGKEY=33863E8C  # Set default GPG key.
 export VISUAL="vi"      # Make NeoVim the default editor.
 export EDITOR="vi"      # Make NeoVim the default editor. Now, 'sudoedit' will open NeoVim.
 export ARCH=$(uname -m) # Set "ARCH" variable (either x86_64 or i686).
+export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/dotfiles/bin:$PATH"
 export PATH="$PATH:$HOME/.gem/ruby/2.3.0/bin"
 export PATH="$PATH:/root/.gem/ruby/2.3.0/bin"
