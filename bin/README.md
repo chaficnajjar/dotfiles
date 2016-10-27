@@ -4,11 +4,36 @@ Bash scripts to get things done, fast.
 
 ## Description
 
+### Spell Checker
+
++ *spell-checker*: Fast spell checker written in Perl. Reads a sentence (with no punctuation except for the last period) and rapidly checks for spelling mistakes.
+
+#### Dependencies
+
+[words](https://en.wikipedia.org/wiki/Words_(Unix) and [Text::LevenshteinXS Perl module](http://search.cpan.org/CPAN/authors/id/J/JG/JGOLDBERG/Text-LevenshteinXS-0.03.tar.gz).
+
+To install the Perl module:
+
+```
+tar -zxvf Text-LevenshteinXS-0.03.tar.gz
+cd Text-LevenshteinXS-0.03
+perl Makefile.PL
+make
+make test
+make install
+```
+
 ### Snippet
 
-+ *snippet* snips the last 10 seconds of several MP4 files and merges them together into one file. **The output directory is ~/output/**.
-    + Dependencies: [avconv](http://libav.org/) and [MP4Box](http://gpac.wp.mines-telecom.fr/mp4box/).
-    + Usage: `./snippet path/to/input/directory`
++ *snippet* snips the last 10 seconds of several MP4 files and merges them together into one file. **The output directory is $HOME/output/**.
+
+#### Dependencies
+
+[avconv](http://libav.org/) and [MP4Box](http://gpac.wp.mines-telecom.fr/mp4box/).
+
+#### Usage
+
+`snippet path/to/input/directory/`
 
 ## Bugs
 
