@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files="profile zshrc vimrc gvimrc vim gtkrc-2.0 tmux.conf i3 i3status.conf ncmpcpp mpd xbindkeysrc bowerrc npmrc"
+files="profile zshrc gvimrc nvim gtkrc-2.0 tmux.conf i3 i3status.conf ncmpcpp mpd xbindkeysrc bowerrc npmrc"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # clean and backup
@@ -19,4 +19,5 @@ else
         # create symlink
         ln -s $DIR/$file ~/.$file
     done
+    ln -s $DIR/nvim $HOME/.config/nvim
 fi

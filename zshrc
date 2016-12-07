@@ -100,7 +100,7 @@ alias tmux="TERM=screen-256color-bce tmux"  # Set correct term for tmux so solar
 alias sudo='sudo '
 alias todo='vi $HOME/documents/todo'
 
-~/.vim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
+~/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
 . $HOME/bin/z/z.sh
 export GPGKEY=33863E8C  # Set default GPG key.
 export VISUAL="vi"      # Make NeoVim the default editor.
