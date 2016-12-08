@@ -116,3 +116,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 
 eval $(thefuck --alias)
+
+# Disable zsh built-in commands.
+disable r
