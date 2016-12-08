@@ -101,7 +101,6 @@ alias sudo='sudo '
 alias todo='vi $HOME/documents/todo'
 
 ~/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
-. $HOME/bin/z/z.sh
 export GPGKEY=33863E8C  # Set default GPG key.
 export VISUAL="vi"      # Make NeoVim the default editor.
 export EDITOR="vi"      # Make NeoVim the default editor. Now, 'sudoedit' will open NeoVim.
@@ -119,3 +118,6 @@ eval $(thefuck --alias)
 
 # Disable zsh built-in commands.
 disable r
+
+# https://aur.archlinux.org/packages/z/
+[[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
