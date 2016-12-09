@@ -103,8 +103,9 @@ alias todo='vi $HOME/documents/todo'
 
 ~/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
 export GPGKEY=33863E8C  # Set default GPG key.
-export VISUAL="vi"      # Make NeoVim the default editor.
-export EDITOR="vi"      # Make NeoVim the default editor. Now, 'sudoedit' will open NeoVim.
+export VISUAL="nvim"      # Make NeoVim the default editor.
+export EDITOR="nvim"      # Make NeoVim the default editor. Now, 'sudoedit' will open NeoVim.
+export DIFFPROG="nvim -d" # Make NeoVim the default editor. Now, 'pacdiff', will open NeoVim.
 export ARCH=$(uname -m) # Set "ARCH" variable (either x86_64 or i686).
 export PATH="$HOME/dotfiles/bin:$PATH"
 export PATH="$PATH:$HOME/.gem/ruby/2.3.0/bin"
