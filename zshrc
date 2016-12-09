@@ -62,9 +62,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+#   export EDITOR="vim"
 # else
-#   export EDITOR='mvim'
+#   export EDITOR="mvim"
 # fi
 
 # Compilation flags
@@ -93,20 +93,20 @@ source $ZSH/oh-my-zsh.sh
 source /etc/profile.d/vte.sh
 
 # My aliases.
-alias rm='rm -i'
-alias vi='nvim'
-alias vim='nvim'
-alias empty-trash='rm -rf ~/.local/share/Trash/*'
-alias explore='nautilus --no-desktop . & disown'
+alias rm="rm -i"
+alias vi="nvim"
+alias vim="nvim"
+alias empty-trash="rm -rf ~/.local/share/Trash/*"
+alias explore="nautilus --no-desktop . & disown"
 alias tmux="TERM=screen-256color-bce tmux"  # Set correct term for tmux so solarized theme works in NeoVim.
-alias sudo='sudo '
-alias todo='vi $HOME/documents/todo'
+alias sudo="sudo "
+alias todo="vi $HOME/documents/todo"
 
 ~/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
 export GPGKEY=33863E8C  # Set default GPG key.
 export VISUAL="nvim"      # Make NeoVim the default editor.
-export EDITOR="nvim"      # Make NeoVim the default editor. Now, 'sudoedit' will open NeoVim.
-export DIFFPROG="nvim -d" # Make NeoVim the default editor. Now, 'pacdiff', will open NeoVim.
+export EDITOR="nvim"      # Make NeoVim the default editor. Now, "sudoedit" will open NeoVim.
+export DIFFPROG="nvim -d" # Make NeoVim the default editor. Now, "pacdiff", will open NeoVim.
 export ARCH=$(uname -m) # Set "ARCH" variable (either x86_64 or i686).
 export PATH="$HOME/dotfiles/bin:$PATH"
 export PATH="$PATH:$HOME/.gem/ruby/2.3.0/bin"
