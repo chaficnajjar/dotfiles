@@ -93,6 +93,7 @@ source $ZSH/oh-my-zsh.sh
 source /etc/profile.d/vte.sh
 
 # My aliases.
+alias rm='rm -i'
 alias vi='nvim'
 alias vim='nvim'
 alias empty-trash='rm -rf ~/.local/share/Trash/*'
