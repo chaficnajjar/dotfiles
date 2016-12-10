@@ -118,8 +118,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 eval $(thefuck --alias)
 
-# Disable zsh built-in commands.
-disable r
-
 # https://aur.archlinux.org/packages/z/
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
