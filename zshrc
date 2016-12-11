@@ -96,7 +96,6 @@ source /etc/profile.d/vte.sh
 alias rm="rm -i"
 alias vi="nvim"
 alias vim="nvim"
-alias empty-trash="rm -rf ~/.local/share/Trash/*"
 alias explore="nautilus --no-desktop . & disown"
 alias tmux="TERM=screen-256color-bce tmux"  # Set correct term for tmux so solarized theme works in NeoVim.
 alias sudo="sudo "
