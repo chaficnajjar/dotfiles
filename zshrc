@@ -119,3 +119,6 @@ eval $(thefuck --alias)
 
 # https://aur.archlinux.org/packages/z/
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
+
+export NVM_DIR="/home/chafic/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
