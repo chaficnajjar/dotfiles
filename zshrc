@@ -99,7 +99,7 @@ alias vim="nvim"
 alias explore="nautilus --no-desktop . & disown"
 alias tmux="TERM=screen-256color-bce tmux"  # Set correct term for tmux so solarized theme works in NeoVim.
 alias sudo="sudo "
-alias todo="vi $HOME/documents/todo"
+alias todo="vi $HOME/todo"
 
 ~/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
 export GPGKEY=33863E8C  # Set default GPG key.
