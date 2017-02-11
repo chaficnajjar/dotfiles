@@ -126,3 +126,6 @@ eval $(thefuck --alias)
 
 export NVM_DIR="/home/chafic/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Wrap git automatically.
+eval "$(hub alias -s)"
