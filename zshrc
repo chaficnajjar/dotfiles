@@ -112,8 +112,7 @@ export EDITOR="nvim"      # Make NeoVim the default editor. Now, "sudoedit" will
 export DIFFPROG="nvim -d" # Make NeoVim the default editor. Now, "pacdiff", will open NeoVim.
 export ARCH=$(uname -m) # Set "ARCH" variable (either x86_64 or i686).
 export PATH="$HOME/dotfiles/bin:$PATH"
-export PATH="$PATH:$HOME/.gem/ruby/2.3.0/bin"
-export PATH="$PATH:/root/.gem/ruby/2.3.0/bin"
+export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Start Xorg on startup.
