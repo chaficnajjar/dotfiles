@@ -1,0 +1,10 @@
+#!/bin/bash
+
+wget \
+    --recursive \
+    --no-host-directories \
+    --page-requisites \
+    --convert-links \
+    --adjust-extension \
+    --exclude-directories=n,m \
+    $1
