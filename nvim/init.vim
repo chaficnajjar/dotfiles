@@ -190,7 +190,7 @@ au BufNewFile,BufRead *.geojson set filetype=geojson
 autocmd FileType geojson noremap <F3> :%!python -m json.tool<cr>
 autocmd FileType javascript noremap <F3> :call JsBeautify()<cr>
 autocmd FileType css noremap <F3> :call CSSBeautify()<cr>
-autocmd FileType html noremap <F3> :call HtmlBeautify()<cr>
+autocmd FileType html,svg noremap <F3> :call HtmlBeautify()<cr>
 
 " Remove trailing whitespace.
 fun! <SID>StripTrailingWhitespaces()
