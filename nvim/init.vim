@@ -167,8 +167,7 @@ vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+"
 
 " CtrlP
-let g:ctrlp_custom_ignore = {
-    \ 'file': '\.a$\|\.o$' }
+let g:ctrlp_custom_ignore = 'node_modules\|git'
 
 " Compilation shortcuts
 autocmd FileType tex noremap <F2> :!xelatex %<CR>
