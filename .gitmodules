@@ -1,48 +1,48 @@
 [submodule "vim/bundle/delimitMate"]
-	path = nvim/bundle/delimitMate
+    path = nvim/bundle/delimitMate
     url = https://github.com/Raimondi/delimitMate.git
 [submodule "vim/bundle/gruvbox"]
-	path = nvim/bundle/gruvbox
+    path = nvim/bundle/gruvbox
     url = https://github.com/morhetz/gruvbox.git
 [submodule "vim/bundle/goyo.vim"]
-	path = nvim/bundle/goyo.vim
+    path = nvim/bundle/goyo.vim
     url = https://github.com/junegunn/goyo.vim.git
 [submodule "vim/bundle/syntastic"]
-	path = nvim/bundle/syntastic
+    path = nvim/bundle/syntastic
     url = https://github.com/scrooloose/syntastic.git
 [submodule "vim/bundle/vim-airline"]
-	path = nvim/bundle/vim-airline
+    path = nvim/bundle/vim-airline
     url = https://github.com/bling/vim-airline.git
 [submodule "vim/bundle/nerdcommenter"]
-	path = nvim/bundle/nerdcommenter
+    path = nvim/bundle/nerdcommenter
     url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "vim/bundle/nerdtree"]
-	path = nvim/bundle/nerdtree
+    path = nvim/bundle/nerdtree
     url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/vim-surround"]
-	path = nvim/bundle/vim-surround
+    path = nvim/bundle/vim-surround
     url = https://github.com/tpope/vim-surround.git
 [submodule "vim/bundle/vim-colors-solarized"]
-	path = nvim/bundle/vim-colors-solarized
+    path = nvim/bundle/vim-colors-solarized
     url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/vim-glsl"]
-	path = nvim/bundle/vim-glsl
+    path = nvim/bundle/vim-glsl
     url = https://github.com/tikhomirov/vim-glsl.git
 [submodule "vim/bundle/vim-fugitive"]
-	path = nvim/bundle/vim-fugitive
+    path = nvim/bundle/vim-fugitive
     url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/bundle/vim-latex"]
-	path = nvim/bundle/vim-latex
+    path = nvim/bundle/vim-latex
     url = https://github.com/lervag/vim-latex.git
 [submodule "vim/bundle/vim-jsbeautify"]
-	path = nvim/bundle/vim-jsbeautify
+    path = nvim/bundle/vim-jsbeautify
     url = https://github.com/maksimr/vim-jsbeautify.git
 [submodule "vim/bundle/vim-instant-markdown"]
-	path = nvim/bundle/vim-instant-markdown
+    path = nvim/bundle/vim-instant-markdown
     url = https://github.com/suan/vim-instant-markdown.git
 [submodule "vim/bundle/ctrlp.vim"]
-	path = nvim/bundle/ctrlp.vim
+    path = nvim/bundle/ctrlp.vim
     url = https://github.com/kien/ctrlp.vim.git
 [submodule "vim/bundle/vim-css-color"]
-	path = nvim/bundle/vim-css-color
-	url = https://github.com/ap/vim-css-color.git
+    path = nvim/bundle/vim-css-color
+    url = https://github.com/ap/vim-css-color.git
