@@ -46,3 +46,12 @@
 [submodule "vim/bundle/vim-css-color"]
     path = nvim/bundle/vim-css-color
     url = https://github.com/ap/vim-css-color.git
+[submodule "nvim/bundle/editorconfig-vim"]
+	path = nvim/bundle/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "nvim/bundle/vim-dirdiff"]
+	path = nvim/bundle/vim-dirdiff
+	url = https://github.com/will133/vim-dirdiff.git
+[submodule "nvim/bundle/vim-wakatime"]
+	path = nvim/bundle/vim-wakatime
+	url = https://github.com/wakatime/vim-wakatime.git
