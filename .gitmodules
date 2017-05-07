@@ -40,9 +40,6 @@
 [submodule "vim/bundle/vim-instant-markdown"]
     path = nvim/bundle/vim-instant-markdown
     url = https://github.com/suan/vim-instant-markdown.git
-[submodule "vim/bundle/ctrlp.vim"]
-    path = nvim/bundle/ctrlp.vim
-    url = https://github.com/kien/ctrlp.vim.git
 [submodule "vim/bundle/vim-css-color"]
     path = nvim/bundle/vim-css-color
     url = https://github.com/ap/vim-css-color.git
