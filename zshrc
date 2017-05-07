@@ -100,9 +100,6 @@ alias explore="nautilus --no-desktop . & disown"
 alias tmux="TERM=screen-256color-bce tmux"  # Set correct term for tmux so solarized theme works in NeoVim.
 alias sudo="sudo "
 alias todo="vi $HOME/todo"
-
-# Remove local branches that have been merged in the remote repository.
-# Reference: http://stackoverflow.com/a/17987721/1300992.
 alias gbpurge='git branch --merged | grep -Ev "(\*|master|develop|staging|gh-pages)" | xargs -n 1 git branch -d'
 
 ~/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
