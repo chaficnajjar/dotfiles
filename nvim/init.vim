@@ -19,8 +19,9 @@ set nowrap
 " Ignoring case when searching
 set ignorecase
 
-" Synthax highlighting
+" Syntax highlighting (max 128 characters per line to avoid slowing down vim)
 syntax enable
+set synmaxcol=128
 
 " Highlight current line
 set cursorline
