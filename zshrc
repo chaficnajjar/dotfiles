@@ -115,8 +115,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Start Xorg on startup.
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 
-eval $(thefuck --alias)
-
 # https://aur.archlinux.org/packages/z/
 [[ -r "/usr/share/z/z.sh" ]] && source /usr/share/z/z.sh
 
