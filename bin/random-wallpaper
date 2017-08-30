@@ -2,7 +2,7 @@
 # Found here: https://wiki.archlinux.org/index.php/Feh
 
 shopt -s nullglob
-cd ~/wallpapers
+cd ~/projects/wallpapers
 
 while true; do
     files=()
