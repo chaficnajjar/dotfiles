@@ -62,7 +62,6 @@ set nobackup
 set nowb
 
 " Pathogen
-let g:pathogen_disabled = ["vim-css-color"]
 execute pathogen#infect()
 
 " Gruvbox (https://github.com/morhetz/gruvbox) theme
