@@ -152,8 +152,8 @@ exec --no-startup-id i3-battery-popup               # Battery warning popup.
 exec --no-startup-id i3-msg 'workspace 9; exec i3-sensible-terminal -e "nvim $HOME/todo"'
 exec --no-startup-id i3-msg 'workspace 10; exec i3-sensible-terminal -e cmus'
 exec redshift-gtk -l 33.89:35.51 -c ~/.config/redshift.conf
-exec $HOME/dotfiles/bin/i3-status-multiple-batteries
-exec $HOME/dotfiles/bin/random-wallpaper
+exec $HOME/dotfiles/public/bin/i3-status-multiple-batteries
+exec $HOME/dotfiles/public/bin/random-wallpaper
 
 # Typematic delay and rate.
 exec --no-startup-id xset r rate 200 30

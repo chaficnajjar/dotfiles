@@ -6,7 +6,7 @@ A collection of dot configurations for my [Lenovo T450s](http://shop.lenovo.com/
 
 ### Clone the repo
 
-`git clone https://github.com/chaficnajjar/dotfiles.git ~/dotfiles`
+`git clone https://github.com/chaficnajjar/dotfiles.git ~/dotfiles/public`
 
 ### Create symlinks
 
