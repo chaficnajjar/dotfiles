@@ -111,6 +111,7 @@ export ARCH=$(uname -m) # Set "ARCH" variable (either x86_64 or i686).
 export PATH="$HOME/dotfiles/public/bin:$HOME/dotfiles/private/bin/:$PATH"
 export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.npm-global/bin:$PATH"
 
 # Start Xorg on startup.
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
