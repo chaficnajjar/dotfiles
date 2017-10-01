@@ -124,3 +124,6 @@ export NVM_DIR="/home/chafic/.nvm"
 
 # Wrap git automatically.
 eval "$(hub alias -s)"
+
+# https://www.reddit.com/r/archlinux/comments/332jlc/psa_have_the_terminal_tell_you_what_to_install/
+source /usr/share/doc/pkgfile/command-not-found.zsh
