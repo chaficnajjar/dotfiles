@@ -1,3 +1,4 @@
 --ignore-directory=is:node_modules
+--ignore-directory=is:_site
 --type-set=sass:ext:scss,sass
 --type-set=markdown:ext:md,markdown
