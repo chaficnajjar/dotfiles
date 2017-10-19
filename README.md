@@ -20,7 +20,7 @@ A collection of dot configurations for my [Lenovo T450s](http://shop.lenovo.com/
 
 To add the `vim-css-color` plugin, do the following:
 
-`git submodule add https://github.com/ap/vim-css-color.git bundle/vim-css-color`
+`git submodule add https://github.com/ap/vim-css-color.git nvim/bundle/vim-css-color`
 
 ## License
 
