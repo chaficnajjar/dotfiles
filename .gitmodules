@@ -58,3 +58,6 @@
 [submodule "nvim/bundle/vim-gnupg"]
 	path = nvim/bundle/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg.git
+[submodule "nvim/bundle/ack.vim"]
+	path = nvim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
