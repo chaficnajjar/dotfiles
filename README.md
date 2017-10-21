@@ -16,6 +16,10 @@ A collection of dot configurations for my [Lenovo T450s](http://shop.lenovo.com/
 
 `git submodule update --init --recursive`
 
+### Pull latest commits of all submodules
+
+`git submodule update --remote --recursive`
+
 ### Add a vim plugin
 
 To add the `vim-css-color` plugin, do the following:
