@@ -36,10 +36,8 @@ set incsearch
 "(if there is one for the detected filetype)
 filetype plugin on
 
-" convert tabs to spaces
-if has("autocmd")
-    au BufReadPost * if &modifiable | retab | endif
-endif
+" Convert tabs to spaces.
+au BufReadPost * if &modifiable | retab | endif
 
 " Indentation
 set autoindent      " set the cursor at same indent as line above
