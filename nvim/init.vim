@@ -31,11 +31,6 @@ autocmd InsertEnter,InsertLeave * set cul!
 " Incremental search
 set incsearch
 
-"This actually loads the file ftplugin.vim in runtimepath.
-"The result is that when a file is edited its plugin file is loaded
-"(if there is one for the detected filetype)
-filetype plugin on
-
 " Convert tabs to spaces.
 au BufReadPost * if &modifiable | retab | endif
 
@@ -48,10 +43,22 @@ set shiftwidth=4    " affects what happens when pressing >> or <<
 set softtabstop=4   " with expandtab enabled, allows deleting 4 spaces
 set expandtab       " turns TAB into 4 spaces
 
-" This actually loads the file indent.vim in 'runtimepath'.
-" The result is that when a file is edited its indent file is loaded
-" (if there is one for the detected filetype).
-filetype indent on
+" Enables file type based indentation.
+"
+" Note: file type detection is enabled by default so this configuration line
+" can be removed and file type detection would still work. Check by yourself
+" by removing this line and running :filetype in Neovim.
+"
+" The following two files will be loaded on runtime:
+"   - /usr/share/nvim/runtime/ftplugin.vim
+"   - /usr/share/nvim/runtime/indent.vim
+"
+" They use a script found in the following directories that corresponds
+" to the file type of the edited file:
+"   - /usr/share/nvim/runtime/ftplugin/
+"   - /usr/share/nvim/runtime/indent/
+"
+filetype plugin indent on
 
 " Turn off swap files
 set noswapfile
