@@ -32,7 +32,9 @@ autocmd InsertEnter,InsertLeave * set cul!
 set incsearch
 
 " Convert tabs to spaces.
-au BufReadPost * if &modifiable | retab | endif
+if @% != ".gitconfig" && @% != "gitconfig"
+    au BufReadPost * if &modifiable | retab | endif
+endif
 
 " Indentation
 set autoindent      " set the cursor at same indent as line above
@@ -41,7 +43,9 @@ set smartindent     " try to be smart about indenting (C-style)
 set tabstop=4       " changes the width of the TAB character
 set shiftwidth=4    " affects what happens when pressing >> or <<
 set softtabstop=4   " with expandtab enabled, allows deleting 4 spaces
-set expandtab       " turns TAB into 4 spaces
+if @% != ".gitconfig" && @% != "gitconfig"
+    set expandtab   " turns TAB into 4 spaces
+endif
 
 " Enables file type based indentation.
 "
