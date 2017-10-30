@@ -1,0 +1,84 @@
+#!/bin/bash
+
+SCREENSHOT_PATH=/tmp/screen.png
+RES=$(xrandr | grep 'current' | sed -E 's/.*current\s([0-9]+)\sx\s([0-9]+).*/\1x\2/')
+
+ffmpeg -f x11grab -video_size $RES -y -i $DISPLAY \
+    -filter_complex "boxblur=2:2" -vframes 1 $SCREENSHOT_PATH -loglevel quiet
+
+convert $SCREENSHOT_PATH -colorize 70,70,70 $SCREENSHOT_PATH
+
+# Gruvbox color palette: https://github.com/morhetz/gruvbox#palette.
+
+transparent="#00000000"
+
+       gray="#282828ff"
+   darkGray="#1d2021ff"
+
+      white="#fbf1c7ff"
+
+   lightRed="#fb4934ff"
+        red="#cc241dff"
+    darkRed="#9d0006ff"
+
+ lightGreen="#b8bb26ff"
+      green="#98971aff"
+  darkGreen="#79740eff"
+
+lightYellow="#fabd2fff"
+     yellow="#d79921ff"
+ darkYellow="#b57614ff"
+
+  lightBlue="#83a598ff"
+       blue="#458588ff"
+   darkBlue="#076678ff"
+
+lightPurple="#d3869bff"
+     purple="#b16286ff"
+ darkPurple="#8f3f71ff"
+
+  lightAqua="#8ec07cff"
+       aqua="#689d6aff"
+   darkAqua="#427b58ff"
+
+lightOrange="#fe8019ff"
+     orange="#d65d0eff"
+ darkOrange="#af3a03ff"
+
+i3lock -s -i $SCREENSHOT_PATH       \
+      --separatorcolor=$transparent \
+                                    \
+         --insidecolor=$darkAqua    \
+      --insidevercolor=$darkAqua    \
+    --insidewrongcolor=$darkRed     \
+                                    \
+           --ringcolor=$aqua        \
+        --ringvercolor=$aqua        \
+      --ringwrongcolor=$darkRed     \
+                                    \
+          --keyhlcolor=$darkYellow  \
+           --bshlcolor=$darkRed     \
+                                    \
+           --textcolor=$white       \
+           --timecolor=$white       \
+           --datecolor=$white       \
+                                    \
+    --screen 0                      \
+    --clock                         \
+    --indicator                     \
+    --timestr="%H:%M:%S"            \
+    --datestr="%A, %b %m %Y"        \
+    --timesize=39                   \
+    --datesize=16                   \
+                                    \
+    --veriftext=""                  \
+    --wrongtext=""                  \
+    --textsize=18                   \
+                                    \
+    --modsize=10                    \
+    --radius=140                    \
+    --timefont="Ubuntu Mono"        \
+    --datefont="Ubuntu Mono"        \
+    --no-composite                  \
+
+rm $SCREENSHOT_PATH
