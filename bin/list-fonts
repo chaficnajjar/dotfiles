@@ -1,0 +1,3 @@
+#!/bin/bash
+
+convert -list font | awk -F: '/Font: / { print $2 }' | sort -du | command -- ${PAGER:-less}
