@@ -1,0 +1,21 @@
+{
+    "layout": "tabbed",
+    "nodes": [
+        {
+            "name": "Google Chrome",
+            "swallows": [
+               {
+                "class": "^Google\\-chrome$"
+               }
+            ]
+        },
+        {
+            "name": "Mozilla Firefox",
+            "swallows": [
+               {
+                "class": "^Firefox$"
+               }
+            ]
+        }
+    ]
+}
