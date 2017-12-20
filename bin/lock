@@ -79,6 +79,5 @@ i3lock -s -i $SCREENSHOT_PATH       \
     --radius=140                    \
     --timefont="Ubuntu Mono"        \
     --datefont="Ubuntu Mono"        \
-    --no-composite                  \
 
 rm $SCREENSHOT_PATH
