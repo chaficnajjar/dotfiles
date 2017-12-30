@@ -213,3 +213,5 @@ cmap w!! w !sudo tee > /dev/null %
 
 " Automatically refresh Vim on buffer/window focus.
 autocmd FocusGained * checktime
+
+autocmd BufNewFile,BufRead *.nunjucks set syntax=html
