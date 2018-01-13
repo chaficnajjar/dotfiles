@@ -49,9 +49,6 @@
 [submodule "nvim/bundle/vim-dirdiff"]
 	path = nvim/bundle/vim-dirdiff
 	url = https://github.com/will133/vim-dirdiff.git
-[submodule "nvim/bundle/vim-wakatime"]
-	path = nvim/bundle/vim-wakatime
-	url = https://github.com/wakatime/vim-wakatime.git
 [submodule "nvim/bundle/ctrlp.vim"]
 	path = nvim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
