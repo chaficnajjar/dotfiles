@@ -20,11 +20,15 @@ A collection of dot configurations for my [Lenovo T450s](http://shop.lenovo.com/
 
 `git submodule update --remote --recursive`
 
-### Add a vim plugin
+### Add a Neovim plugin
 
 To add the `vim-css-color` plugin, do the following:
 
 `git submodule add https://github.com/ap/vim-css-color.git nvim/bundle/vim-css-color`
+
+### Delete a Neovim plugin
+
+Follow the instructions at https://stackoverflow.com/a/36593218/1300992.
 
 ## License
 
