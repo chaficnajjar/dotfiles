@@ -10,10 +10,11 @@
             ]
         },
         {
-            "name": "Mozilla Firefox",
+            "name": "Terminal",
             "swallows": [
                {
-                "class": "^Firefox$"
+                "class": "^Gnome\\-terminal$",
+                "window_role": "^terminal$"
                }
             ]
         }

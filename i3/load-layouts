@@ -6,6 +6,6 @@ i3-msg "workspace 10; append_layout ~/.i3/workspace-10.json;"
 i3-msg "workspace 3;"
 
 (google-chrome-stable &)
-(firefox &)
 (i3-sensible-terminal --role "todo" -e "nvim $HOME/documents/todo.gpg" &)
 (i3-sensible-terminal --role "music" -e cmus &)
+(i3-sensible-terminal --role "terminal" &)
