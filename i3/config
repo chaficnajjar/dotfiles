@@ -180,6 +180,9 @@ mode "$mode_system" {
 bindsym $mod+Delete mode "$mode_system"
 bindsym $mod+BackSpace exec --no-startup-id lock, mode "default"
 
+# https://wiki.archlinux.org/index.php/Pass#Basic_usage
+bindsym $mod+p exec passmenu
+
 # Deactivate window focus to follow mouse movement
 focus_follows_mouse no
 
