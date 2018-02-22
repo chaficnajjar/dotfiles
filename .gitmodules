@@ -22,9 +22,6 @@
 [submodule "vim/bundle/vim-surround"]
     path = nvim/bundle/vim-surround
     url = https://github.com/tpope/vim-surround.git
-[submodule "vim/bundle/vim-colors-solarized"]
-    path = nvim/bundle/vim-colors-solarized
-    url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "vim/bundle/vim-glsl"]
     path = nvim/bundle/vim-glsl
     url = https://github.com/tikhomirov/vim-glsl.git
