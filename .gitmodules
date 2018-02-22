@@ -55,3 +55,6 @@
 [submodule "nvim/bundle/vim-javascript"]
 	path = nvim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule "nvim/bundle/vim-jinja"]
+	path = nvim/bundle/vim-jinja
+	url = https://github.com/lepture/vim-jinja.git
