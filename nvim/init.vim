@@ -4,9 +4,6 @@ set nocompatible
 " Show what you are typing as a command.
 set showcmd
 
-" Folding (http://www.linux.com/learn/tutorials/442438-vim-tips-folding-fun)
-set foldmethod=marker
-
 " Add line number
 set number
 
