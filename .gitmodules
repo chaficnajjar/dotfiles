@@ -58,3 +58,6 @@
 [submodule "nvim/bundle/vim-jinja"]
 	path = nvim/bundle/vim-jinja
 	url = https://github.com/lepture/vim-jinja.git
+[submodule "nvim/bundle/vim-jsx"]
+	path = nvim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx
