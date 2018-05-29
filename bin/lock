@@ -59,7 +59,8 @@ i3lock -s -i $SCREENSHOT_PATH       \
           --keyhlcolor=$darkYellow  \
            --bshlcolor=$darkRed     \
                                     \
-           --textcolor=$white       \
+          --verifcolor=$white       \
+          --wrongcolor=$white       \
            --timecolor=$white       \
            --datecolor=$white       \
                                     \
@@ -73,11 +74,10 @@ i3lock -s -i $SCREENSHOT_PATH       \
                                     \
     --veriftext=""                  \
     --wrongtext=""                  \
-    --textsize=18                   \
                                     \
     --modsize=10                    \
     --radius=140                    \
-    --timefont="Ubuntu Mono"        \
-    --datefont="Ubuntu Mono"        \
+    --time-font="Ubuntu Mono"       \
+    --date-font="Ubuntu Mono"       \
 
 rm $SCREENSHOT_PATH
