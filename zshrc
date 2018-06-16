@@ -100,6 +100,7 @@ alias explore="nautilus --no-desktop . & disown"
 alias sudo="sudo "
 alias todo="vi $HOME/documents/todo.gpg"
 alias gbpurge='git branch --merged | grep -Ev "(\*|master|develop|staging|gh-pages)" | xargs -n 1 git branch -d'
+alias v='vi "$(fzf)"'
 
 ~/.config/nvim/bundle/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
 export GPGKEY=33863E8C  # Set default GPG key.
