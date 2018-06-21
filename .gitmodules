@@ -61,3 +61,6 @@
 [submodule "nvim/bundle/vim-jsx"]
 	path = nvim/bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx
+[submodule "nvim/bundle/emmet-vim"]
+	path = nvim/bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
