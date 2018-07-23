@@ -171,8 +171,8 @@ vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+"
 
-" CtrlP
-let g:ctrlp_custom_ignore = 'node_modules\|git\|_site'
+" CtrlP: ignore files in .gitignore
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " Compilation shortcuts
 autocmd FileType tex noremap <F2> :!xelatex %<CR>
