@@ -61,10 +61,10 @@ endif
 "
 filetype plugin indent on
 
-" Turn off swap files
-set noswapfile
-set nobackup
-set nowb
+" Automatic back up
+set backupdir=~/.backup/backup//
+set directory=~/.backup/swap//
+set undodir=~/.backup/undo//
 
 " Pathogen
 execute pathogen#infect()
