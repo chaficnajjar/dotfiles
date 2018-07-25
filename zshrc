@@ -130,3 +130,6 @@ eval "$(hub alias -s)"
 
 # https://www.reddit.com/r/archlinux/comments/332jlc/psa_have_the_terminal_tell_you_what_to_install/
 source /usr/share/doc/pkgfile/command-not-found.zsh
+
+# Set up Heroku CLI autocomplete
+HEROKU_AC_ZSH_SETUP_PATH=/home/chafic/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
