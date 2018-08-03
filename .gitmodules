@@ -64,3 +64,6 @@
 [submodule "nvim/bundle/emmet-vim"]
 	path = nvim/bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "nvim/bundle/suda.vim"]
+	path = nvim/bundle/suda.vim
+	url = https://github.com/lambdalisue/suda.vim.git
