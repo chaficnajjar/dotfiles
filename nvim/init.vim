@@ -206,7 +206,7 @@ endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " Allow saving of files as sudo when I forget to start vim using sudo.
-cmap w!! w !sudo tee > /dev/null %
+cmap w!! w suda://%
 
 " Automatically refresh Vim on buffer/window focus.
 autocmd FocusGained * checktime
