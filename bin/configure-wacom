@@ -1,0 +1,10 @@
+#!/bin/bash
+
+xsetwacom --set "Wacom Intuos Pro M Pad pad" Button 2 "key +ctrl +shift z -ctrl -shift"
+xsetwacom --set "Wacom Intuos Pro M Pad pad" Button 3 "key +ctrl z -ctrl"
+xsetwacom --set "Wacom Intuos Pro M Pad pad" Button 8 "key +ctrl"
+xsetwacom --set "Wacom Intuos Pro M Pad pad" Button 9 "key +tab"
+
+xsetwacom --set "Wacom Intuos Pro M Pad pad" Button 1 "key 1"
+
+xsetwacom --set "Wacom Intuos Pro M Pad pad" Button 10 "key +space"
