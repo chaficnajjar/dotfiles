@@ -1,4 +1,4 @@
 #!/bin/bash
 # Author: Chafic Najjar <chafic.najjar@gmail.com>
 
-feh -g 640x480 --auto-rotate --scale-down -d -S filename "$@"
+feh -g 1200x676 --auto-rotate --scale-down -d -S filename "$@"
