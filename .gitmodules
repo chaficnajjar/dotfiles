@@ -67,3 +67,6 @@
 [submodule "nvim/bundle/suda.vim"]
 	path = nvim/bundle/suda.vim
 	url = https://github.com/lambdalisue/suda.vim.git
+[submodule "nvim/bundle/vim-matchup"]
+	path = nvim/bundle/vim-matchup
+	url = https://github.com/andymass/vim-matchup.git
