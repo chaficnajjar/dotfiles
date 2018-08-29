@@ -66,8 +66,36 @@ set backupdir=~/.backup/backup//
 set directory=~/.backup/swap//
 set undodir=~/.backup/undo//
 
-" Pathogen
-execute pathogen#infect()
+" vim-plug
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'andymass/vim-matchup'
+Plug 'ap/vim-css-color'
+Plug 'bling/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'jamessan/vim-gnupg'
+Plug 'junegunn/goyo.vim'
+Plug 'lambdalisue/suda.vim'
+Plug 'lepture/vim-jinja'
+Plug 'lervag/vim-latex'
+Plug 'maksimr/vim-jsbeautify'
+Plug 'mattn/emmet-vim'
+Plug 'morhetz/gruvbox'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'Raimondi/delimitMate'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'suan/vim-instant-markdown'
+Plug 'tikhomirov/vim-glsl'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'will133/vim-dirdiff'
+
+call plug#end()
 
 " Gruvbox (https://github.com/morhetz/gruvbox) theme
 set background=dark
@@ -212,11 +240,5 @@ cmap w!! w suda://%
 autocmd FocusGained * checktime
 
 autocmd BufNewFile,BufRead *.nunjucks set syntax=html
-
-call plug#begin('~/.config/nvim/plugged')
-
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
-call plug#end()
 
 let g:deoplete#enable_at_startup = 1
