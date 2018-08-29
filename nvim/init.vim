@@ -212,3 +212,11 @@ cmap w!! w suda://%
 autocmd FocusGained * checktime
 
 autocmd BufNewFile,BufRead *.nunjucks set syntax=html
+
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+call plug#end()
+
+let g:deoplete#enable_at_startup = 1

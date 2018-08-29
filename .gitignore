@@ -2,3 +2,4 @@ cmus/*
 !cmus/autosave
 !cmus/rc
 gtk-3.0/bookmarks
+nvim/plugged/
