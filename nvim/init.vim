@@ -91,6 +91,7 @@ Plug 'scrooloose/syntastic'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'suan/vim-instant-markdown'
 Plug 'tikhomirov/vim-glsl'
+Plug 'tomlion/vim-solidity'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'will133/vim-dirdiff'
