@@ -37,9 +37,9 @@ endif
 set autoindent      " set the cursor at same indent as line above
 set smartindent     " try to be smart about indenting (C-style)
 
-set tabstop=4       " changes the width of the TAB character
-set shiftwidth=4    " affects what happens when pressing >> or <<
-set softtabstop=4   " with expandtab enabled, allows deleting 4 spaces
+set tabstop=2       " changes the width of the TAB character
+set shiftwidth=2    " affects what happens when pressing >> or <<
+set softtabstop=2   " with expandtab enabled, allows deleting 4 spaces
 if @% != ".gitconfig" && @% != "gitconfig"
     set expandtab   " turns TAB into 4 spaces
 endif
@@ -89,7 +89,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'suan/vim-instant-markdown'
 Plug 'tikhomirov/vim-glsl'
 Plug 'tomlion/vim-solidity'
 Plug 'tpope/vim-fugitive'
