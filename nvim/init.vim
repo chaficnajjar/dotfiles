@@ -242,3 +242,6 @@ autocmd FocusGained * checktime
 autocmd BufNewFile,BufRead *.nunjucks set syntax=html
 
 let g:deoplete#enable_at_startup = 1
+
+" Turn off syntax highlighting when using ghi
+autocmd! BufReadPost .git/GHI_ISSUE_*.md set syntax=off
