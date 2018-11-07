@@ -100,6 +100,8 @@ alias explore="nautilus --no-desktop . & disown"
 alias sudo="sudo "
 alias todo="vi $HOME/documents/todo.gpg"
 alias gbpurge='git branch --merged | grep -Ev "(\*|master|develop|staging|gh-pages)" | xargs -n 1 git branch -d'
+alias e='exa'
+alias ls='echo "use \"e\""'
 
 export FZF_DEFAULT_COMMAND='fd --type f'
 alias v='vi "$(fzf)"'
