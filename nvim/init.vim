@@ -93,6 +93,7 @@ Plug 'tomlion/vim-solidity'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'will133/vim-dirdiff'
+Plug 'jparise/vim-graphql'
 
 call plug#end()
 
