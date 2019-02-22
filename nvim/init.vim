@@ -94,6 +94,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'will133/vim-dirdiff'
 Plug 'jparise/vim-graphql'
+Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -245,3 +246,5 @@ let g:deoplete#enable_at_startup = 1
 
 " Turn off syntax highlighting when using ghi
 autocmd! BufReadPost .git/GHI_ISSUE_*.md set syntax=off
+
+let b:ale_linters = ['eslint']
