@@ -247,6 +247,8 @@ let g:deoplete#enable_at_startup = 1
 " Turn off syntax highlighting when using ghi
 autocmd! BufReadPost .git/GHI_ISSUE_*.md set syntax=off
 
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
 let b:ale_linters = ['eslint']
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '✘'
