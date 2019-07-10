@@ -258,3 +258,15 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 let g:NERDCustomDelimiters={
   \ 'javascript': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' }
 \}
+
+" Move line up one line.
+nnoremap <S-k> :m-2<CR>
+
+" Move line down one line.
+nnoremap <S-j> :m+<CR>
+
+" Move selected lines up one line.
+xnoremap <S-k> :m-2<CR>gv=gv
+
+" Move selected lines down one line.
+xnoremap <S-j> :m'>+<CR>gv=gv
