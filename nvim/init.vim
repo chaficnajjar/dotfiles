@@ -270,3 +270,6 @@ xnoremap <S-k> :m-2<CR>gv=gv
 
 " Move selected lines down one line.
 xnoremap <S-j> :m'>+<CR>gv=gv
+
+" Set syntax highlighting of *.snap.js files to JavaScript.
+autocmd BufNewFile,BufRead *.js.snap set syntax=javascript
