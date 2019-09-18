@@ -1,6 +1,3 @@
-" Use vim settings instead of Vi settings
-set nocompatible
-
 " Show what you are typing as a command.
 set showcmd
 
