@@ -77,8 +77,6 @@ Plug 'lambdalisue/suda.vim'
 Plug 'lervag/vim-latex'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'morhetz/gruvbox'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
@@ -91,6 +89,8 @@ Plug 'tpope/vim-surround'
 Plug 'will133/vim-dirdiff'
 Plug 'jparise/vim-graphql'
 Plug 'w0rp/ale'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'othree/yajs.vim'
 
 call plug#end()
 
