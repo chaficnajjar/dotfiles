@@ -1,0 +1,48 @@
+# Colors hand-picked from https://github.com/gruvbox-community/gruvbox-contrib#palette
+
+# Text
+set color_win_fg=default
+
+# Background
+set color_win_bg=default
+
+# Top title area
+set color_win_title_bg=237
+set color_win_title_fg=3
+
+# Bottom title line
+set color_titleline_bg=237
+set color_titleline_fg=10
+
+# Bottom status line
+set color_statusline_bg=236
+set color_statusline_fg=10
+
+# Command-line
+set color_cmdline_bg=default
+set color_cmdline_fg=default
+set color_error=9
+set color_info=3
+set color_separator=237
+
+# Playing track (unselected)
+set color_win_cur=10
+
+# Playing track (active selection)
+set color_win_cur_sel_bg=3
+set color_win_cur_sel_fg=0
+
+# Playing track (inactive selection)
+set color_win_inactive_cur_sel_bg=237
+set color_win_inactive_cur_sel_fg=10
+
+# Non-playing track (active selection)
+set color_win_sel_bg=3
+set color_win_sel_fg=0
+
+# Non-playing track (inactive selection)
+set color_win_inactive_sel_bg=237
+set color_win_inactive_sel_fg=default
+
+# Directory listing
+set color_win_dir=3
