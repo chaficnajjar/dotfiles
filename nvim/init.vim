@@ -135,9 +135,6 @@ endif
 " Stop indenting when pasting with the mouse
 set pastetoggle=<F5>
 
-" Turn on comment spell checking
-set spell
-
 "" Display status line
 set laststatus=2
 
