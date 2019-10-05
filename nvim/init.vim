@@ -90,8 +90,6 @@ call plug#end()
 " Gruvbox (https://github.com/morhetz/gruvbox) theme
 colorscheme gruvbox
 
-let g:gruvbox_italic=0
-
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
