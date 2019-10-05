@@ -139,10 +139,6 @@ set pastetoggle=<F5>
 " Turn on comment spell checking
 set spell
 
-" Syntastic options
-let g:syntastic_cpp_check_header = 1
-let g:syntastic_cpp_compiler_options = '-std=c++0x'
-
 "" Display status line
 set laststatus=2
 
@@ -192,8 +188,6 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 " Compilation shortcuts
 autocmd FileType tex noremap <F2> :!xelatex %<CR>
-autocmd FileType cpp noremap <F2> :! g++ % -o %:r -std=c++11 && ./%:r<CR>
-autocmd FileType java noremap <F2> :! javac % && java %:r<CR>
 
 " Beautify.
 autocmd FileType json noremap <F3> :%!python -m json.tool<cr>
