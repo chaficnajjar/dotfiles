@@ -88,7 +88,6 @@ Plug 'w0rp/ale'
 call plug#end()
 
 " Gruvbox (https://github.com/morhetz/gruvbox) theme
-set background=dark
 colorscheme gruvbox
 
 if !has("gui_running")
