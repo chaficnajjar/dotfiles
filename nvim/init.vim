@@ -78,7 +78,6 @@ Plug 'maksimr/vim-jsbeautify'
 Plug 'morhetz/gruvbox'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -146,9 +145,6 @@ let g:syntastic_cpp_compiler_options = '-std=c++0x'
 
 "" Display status line
 set laststatus=2
-
-" NERDTree ignores all object files
-let NERDTreeIgnore = ['\.o$']
 
 " break search after reaching last found item
 set nowrapscan
