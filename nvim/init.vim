@@ -195,15 +195,6 @@ autocmd FileType tex noremap <F2> :!xelatex %<CR>
 autocmd FileType cpp noremap <F2> :! g++ % -o %:r -std=c++11 && ./%:r<CR>
 autocmd FileType java noremap <F2> :! javac % && java %:r<CR>
 
-" Counting words in LaTeX documents
-function! WC()
-    let filename = expand("%")
-    let cmd = "detex " . filename . " | wc -w | tr -d [:space:]"
-    let result = system(cmd)
-    echo result . " words"
-endfunction
-command WC call WC()
-
 " Beautify.
 autocmd FileType json noremap <F3> :%!python -m json.tool<cr>
 au BufNewFile,BufRead *.geojson set filetype=geojson
