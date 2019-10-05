@@ -81,16 +81,12 @@ Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
+Plug 'sheerun/vim-polyglot'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'tikhomirov/vim-glsl'
-Plug 'tomlion/vim-solidity'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'will133/vim-dirdiff'
-Plug 'jparise/vim-graphql'
 Plug 'w0rp/ale'
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'othree/yajs.vim'
 
 call plug#end()
 
