@@ -1,6 +1,3 @@
-" Show what you are typing as a command.
-set showcmd
-
 " Add line number
 set number
 
