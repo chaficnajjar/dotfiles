@@ -27,7 +27,7 @@ set incsearch
 
 " Convert tabs to spaces.
 if @% != ".gitconfig" && @% != "gitconfig"
-    au BufReadPost * if &modifiable | retab | endif
+  au BufReadPost * if &modifiable | retab | endif
 endif
 
 " Indentation
@@ -38,7 +38,7 @@ set tabstop=2       " changes the width of the TAB character
 set shiftwidth=2    " affects what happens when pressing >> or <<
 set softtabstop=2   " with expandtab enabled, allows deleting 4 spaces
 if @% != ".gitconfig" && @% != "gitconfig"
-    set expandtab   " turns TAB into 4 spaces
+  set expandtab   " turns TAB into 4 spaces
 endif
 
 " Enables file type based indentation.
@@ -92,11 +92,11 @@ set background=dark
 colorscheme gruvbox
 
 if !has("gui_running")
-   let g:gruvbox_italic=0
+  let g:gruvbox_italic=0
 endif
 
 if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
+  set t_Co=256
 endif
 
 " Disable auto commenting
@@ -128,8 +128,8 @@ noremap gd :bd<cr>
 
 " Avoid scrolling when switching buffers
 if v:version >= 700
-    au BufLeave * if !&diff | let b:winview = winsaveview() | endif
-    au BufEnter * if exists('b:winview') && !&diff | call winrestview(b:winview) | unlet! b:winview | endif
+  au BufLeave * if !&diff | let b:winview = winsaveview() | endif
+  au BufEnter * if exists('b:winview') && !&diff | call winrestview(b:winview) | unlet! b:winview | endif
 endif
 
 " Stop indenting when pasting with the mouse
@@ -195,10 +195,10 @@ autocmd FileType html,svg noremap <F3> :call HtmlBeautify()<cr>
 
 " Remove trailing whitespace.
 fun! <SID>StripTrailingWhitespaces()
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    call cursor(l, c)
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  call cursor(l, c)
 endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
