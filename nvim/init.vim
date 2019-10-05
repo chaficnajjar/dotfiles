@@ -78,7 +78,6 @@ Plug 'maksimr/vim-jsbeautify'
 Plug 'morhetz/gruvbox'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-fugitive'
