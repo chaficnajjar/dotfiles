@@ -73,10 +73,10 @@ Plug 'jamessan/vim-gnupg'
 Plug 'junegunn/goyo.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'maksimr/vim-jsbeautify'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'will133/vim-dirdiff'
@@ -199,8 +199,6 @@ cmap w!! w suda://%
 
 " Automatically refresh Vim on buffer/window focus.
 autocmd FocusGained * checktime
-
-let g:deoplete#enable_at_startup = 1
 
 " Turn off syntax highlighting when using ghi
 autocmd! BufReadPost .git/GHI_ISSUE_*.md set syntax=off
