@@ -3,4 +3,5 @@ cmus/autosave
 !cmus/rc
 !cmus/gruvbox.theme
 gtk-3.0/bookmarks
+nvim/.netrwhist
 nvim/plugged/
