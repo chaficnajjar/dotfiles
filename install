@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files_in_home_dir="zshrc gvimrc gtkrc-2.0 tmux.conf i3 i3status.conf xbindkeysrc npmrc ackrc Xmodmap xinitrc psql"
+files_in_home_dir="zshrc gvimrc gtkrc-2.0 tmux.conf i3 i3status.conf xbindkeysrc npmrc Xmodmap xinitrc psql"
 files_in_config_dir="compton.conf nvim redshift.conf zathura cmus gtk-3.0 archey3.cfg"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
