@@ -4,6 +4,9 @@ set number relativenumber
 " Display long lines as just one line
 set nowrap
 
+" Ignoring case when searching
+set ignorecase
+
 " Highlight current line
 set cursorline
 
