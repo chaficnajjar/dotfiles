@@ -7,9 +7,6 @@ set hlsearch
 " Display long lines as just one line
 set nowrap
 
-" Ignoring case when searching
-set ignorecase
-
 " Syntax highlighting
 syntax enable
 
