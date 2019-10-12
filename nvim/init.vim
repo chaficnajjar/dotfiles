@@ -1,5 +1,5 @@
-" Add line number
-set number
+" Turn hybrid line numbers on (see https://jeffkreeftmeijer.com/vim-number/).
+set number relativenumber
 
 " Display long lines as just one line
 set nowrap
