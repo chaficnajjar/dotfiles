@@ -1,9 +1,6 @@
 " Add line number
 set number
 
-" Highlight search matches
-set hlsearch
-
 " Display long lines as just one line
 set nowrap
 
