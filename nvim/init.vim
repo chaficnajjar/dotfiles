@@ -4,9 +4,6 @@ set number
 " Display long lines as just one line
 set nowrap
 
-" Syntax highlighting
-syntax enable
-
 " Highlight current line
 set cursorline
 
