@@ -29,23 +29,6 @@ if @% != ".gitconfig" && @% != "gitconfig"
   set expandtab   " turns TAB into 2 spaces
 endif
 
-" Enables file type based indentation.
-"
-" Note: file type detection is enabled by default so this configuration line
-" can be removed and file type detection would still work. Check by yourself
-" by removing this line and running :filetype in Neovim.
-"
-" The following two files will be loaded on runtime:
-"   - /usr/share/nvim/runtime/ftplugin.vim
-"   - /usr/share/nvim/runtime/indent.vim
-"
-" They use a script found in the following directories that corresponds
-" to the file type of the edited file:
-"   - /usr/share/nvim/runtime/ftplugin/
-"   - /usr/share/nvim/runtime/indent/
-"
-filetype plugin indent on
-
 " Automatic back up
 set backupdir=~/.backup/backup//
 set directory=~/.backup/swap//
