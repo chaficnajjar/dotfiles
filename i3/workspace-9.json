@@ -1,9 +1,9 @@
 {
-    "name": "Terminal",
-    "swallows": [
-       {
-        "class": "^Gnome\\-terminal$",
-        "window_role": "^todo$"
-       }
-    ]
+  "name": "Terminal",
+  "swallows": [
+     {
+      "class": "^Gnome\\-terminal$",
+      "window_role": "^todo$"
+     }
+  ]
 }

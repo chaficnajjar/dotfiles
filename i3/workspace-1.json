@@ -1,22 +1,22 @@
 {
-    "layout": "tabbed",
-    "nodes": [
+  "layout": "tabbed",
+  "nodes": [
+    {
+      "name": "Google Chrome",
+      "swallows": [
         {
-            "name": "Google Chrome",
-            "swallows": [
-               {
-                "class": "^Google\\-chrome$"
-               }
-            ]
-        },
-        {
-            "name": "Terminal",
-            "swallows": [
-               {
-                "class": "^Gnome\\-terminal$",
-                "window_role": "^terminal$"
-               }
-            ]
+          "class": "^Google\\-chrome$"
         }
-    ]
+      ]
+    },
+    {
+      "name": "Terminal",
+      "swallows": [
+        {
+          "class": "^Gnome\\-terminal$",
+          "window_role": "^terminal$"
+        }
+      ]
+    }
+  ]
 }

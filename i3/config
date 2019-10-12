@@ -121,26 +121,26 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+  # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym l resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym h resize grow width 10 px or 10 ppt
+  # Pressing left will shrink the window’s width.
+  # Pressing right will grow the window’s width.
+  # Pressing up will shrink the window’s height.
+  # Pressing down will grow the window’s height.
+  bindsym l resize shrink width 10 px or 10 ppt
+  bindsym j resize grow height 10 px or 10 ppt
+  bindsym k resize shrink height 10 px or 10 ppt
+  bindsym h resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Right resize shrink width 10 px or 10 ppt
-        bindsym Up resize grow height 10 px or 10 ppt
-        bindsym Down resize shrink height 10 px or 10 ppt
-        bindsym Left resize grow width 10 px or 10 ppt
+  # same bindings, but for the arrow keys
+  bindsym Right resize shrink width 10 px or 10 ppt
+  bindsym Up resize grow height 10 px or 10 ppt
+  bindsym Down resize shrink height 10 px or 10 ppt
+  bindsym Left resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym return mode "default"
-        bindsym Escape mode "default"
+  # back to normal: Enter or Escape
+  bindsym return mode "default"
+  bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -166,16 +166,16 @@ exec --no-startup-id xbindkeys
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id lock, mode "default"
-    bindsym e exec --no-startup-id logout, mode "default"
-    bindsym s exec --no-startup-id systemctl suspend, mode "default"
-    bindsym h exec --no-startup-id systemctl hibernate, mode "default"
-    bindsym r exec --no-startup-id gksudo "shutdown -r now", mode "default"
-    bindsym Shift+s exec --no-startup-id gksudo "shutdown -h now", mode "default"
+  bindsym l exec --no-startup-id lock, mode "default"
+  bindsym e exec --no-startup-id logout, mode "default"
+  bindsym s exec --no-startup-id systemctl suspend, mode "default"
+  bindsym h exec --no-startup-id systemctl hibernate, mode "default"
+  bindsym r exec --no-startup-id gksudo "shutdown -r now", mode "default"
+  bindsym Shift+s exec --no-startup-id gksudo "shutdown -h now", mode "default"
 
-    # back to normal: Enter or Escape
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+  # back to normal: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 bindsym $mod+Delete mode "$mode_system"
 bindsym $mod+BackSpace exec --no-startup-id lock, mode "default"
