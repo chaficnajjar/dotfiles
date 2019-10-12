@@ -7,28 +7,28 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # clean and backup
 
 if [ -d "$HOME/dotfiles_backup" ]; then
-    echo "Backup directory already generated."
+  echo "Backup directory already generated."
 else
-    mkdir ~/dotfiles_backup
-    for file in $files_in_home_dir; do
-        # move file or directory to backup directory only if it exists
-        if [ -f "$HOME/.$file" ] || [ -d "$HOME/.$file" ] || [ -L "$HOME/.$file" ]; then
-            mv ~/.$file ~/dotfiles_backup/$file
-        fi
+  mkdir ~/dotfiles_backup
+  for file in $files_in_home_dir; do
+    # move file or directory to backup directory only if it exists
+    if [ -f "$HOME/.$file" ] || [ -d "$HOME/.$file" ] || [ -L "$HOME/.$file" ]; then
+        mv ~/.$file ~/dotfiles_backup/$file
+    fi
 
-        echo "Creating symlink to $DIR/$file...done!"
-        # create symlink
-        ln -s $DIR/$file ~/.$file
-    done
+    echo "Creating symlink to $DIR/$file...done!"
+    # create symlink
+    ln -s $DIR/$file ~/.$file
+  done
 
-    for file in $files_in_config_dir; do
-        # move file or directory to backup directory only if it exists
-        if [ -f "$HOME/.config/$file" ] || [ -d "$HOME/.config/$file" ] || [ -L "$HOME/.config/$file" ]; then
-            mv ~/.config/$file ~/dotfiles_backup/$file
-        fi
+  for file in $files_in_config_dir; do
+    # move file or directory to backup directory only if it exists
+    if [ -f "$HOME/.config/$file" ] || [ -d "$HOME/.config/$file" ] || [ -L "$HOME/.config/$file" ]; then
+        mv ~/.config/$file ~/dotfiles_backup/$file
+    fi
 
-        echo "Creating symlink to $DIR/$file...done!"
-        # create symlink
-        ln -s $DIR/$file $HOME/.config/$file
-    done
+    echo "Creating symlink to $DIR/$file...done!"
+    # create symlink
+    ln -s $DIR/$file $HOME/.config/$file
+  done
 fi
