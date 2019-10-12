@@ -174,9 +174,6 @@ cmap w!! w suda://%
 " Automatically refresh Vim on buffer/window focus.
 autocmd FocusGained * checktime
 
-" Turn off syntax highlighting when using ghi
-autocmd! BufReadPost .git/GHI_ISSUE_*.md set syntax=off
-
 let b:ale_linters = ['eslint']
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '✘'
