@@ -203,3 +203,6 @@ xnoremap <S-j> :m'>+<CR>gv=gv
 
 " Set syntax highlighting of *.snap.js files to JavaScript.
 autocmd BufNewFile,BufRead *.js.snap set syntax=javascript
+
+" See https://github.com/neoclide/coc.nvim#example-vim-configuration and https://medium.com/usevim/vim-101-set-hidden-f78800142855.
+set hidden
