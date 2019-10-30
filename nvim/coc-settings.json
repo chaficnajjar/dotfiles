@@ -1,5 +1,7 @@
 {
-  "diagnostic.displayByAle": true,
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "diagnostic.errorSign": "✘",
+  "diagnostic.warningSign": "✘",
   "javascript.suggestionActions.enabled": false,
   "typescript.suggestionActions.enabled": false
 }

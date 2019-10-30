@@ -57,7 +57,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'will133/vim-dirdiff'
-Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -177,14 +176,6 @@ cmap w!! w suda://%
 " Automatically refresh Vim on buffer/window focus.
 autocmd FocusGained * checktime
 
-let b:ale_linters = ['eslint']
-let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '✘'
-highlight ALEErrorSign ctermbg=NONE ctermfg=red
-highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
-nmap <silent> <C-k> <Plug>(ale_previous)
-nmap <silent> <C-j> <Plug>(ale_next)
-
 let g:NERDCustomDelimiters={
   \ 'javascript': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' }
 \}
@@ -206,3 +197,17 @@ autocmd BufNewFile,BufRead *.js.snap set syntax=javascript
 
 " See https://github.com/neoclide/coc.nvim#example-vim-configuration and https://medium.com/usevim/vim-101-set-hidden-f78800142855.
 set hidden
+
+highlight CocErrorSign ctermfg=red
+highlight CocWarningSign ctermfg=yellow
+highlight CocErrorHighlight cterm=undercurl guisp=#fb4934
+highlight CocWarningHighlight cterm=undercurl guisp=#fabd2f
+
+" Ctrl + l = show documentation in preview window.
+" Solution taken from https://github.com/neoclide/coc.nvim/issues/869#issuecomment-501323697.
+nnoremap <silent> <C-l> :call CocAction('doHover')<CR>
+
+" Ctrl + k = go to next error or warning.
+" Ctrl + j = go to previous error or warning.
+nmap <silent> <C-k> <Plug>(coc-diagnostic-prev)
+nmap <silent> <C-j> <Plug>(coc-diagnostic-next)
