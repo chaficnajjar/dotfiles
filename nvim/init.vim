@@ -207,6 +207,9 @@ highlight CocWarningHighlight cterm=undercurl guisp=#fabd2f
 " Solution taken from https://github.com/neoclide/coc.nvim/issues/869#issuecomment-501323697.
 nnoremap <silent> <C-l> :call CocAction('doHover')<CR>
 
+" Ctrl + h = to trigger TypeScript completion.
+inoremap <silent><expr> <C-h> coc#refresh()
+
 " Ctrl + k = go to next error or warning.
 " Ctrl + j = go to previous error or warning.
 nmap <silent> <C-k> <Plug>(coc-diagnostic-prev)
