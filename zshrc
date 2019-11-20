@@ -138,3 +138,6 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # Set up Heroku CLI autocomplete
 HEROKU_AC_ZSH_SETUP_PATH=/home/chafic/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
+# Source nvm so it be can be used.
+source /usr/share/nvm/init-nvm.sh
