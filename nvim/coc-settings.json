@@ -3,5 +3,6 @@
   "diagnostic.errorSign": "✘",
   "diagnostic.warningSign": "✘",
   "javascript.suggestionActions.enabled": false,
+  "stylelint.filetypes": ["css", "scss"],
   "typescript.suggestionActions.enabled": false
 }
