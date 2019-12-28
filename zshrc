@@ -141,3 +141,7 @@ HEROKU_AC_ZSH_SETUP_PATH=/home/chafic/.cache/heroku/autocomplete/zsh_setup && te
 
 # Source nvm so it be can be used.
 source /usr/share/nvm/init-nvm.sh
+
+. /opt/asdf-vm/asdf.sh
+
+. /opt/asdf-vm/completions/asdf.bash
