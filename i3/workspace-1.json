@@ -2,10 +2,10 @@
   "layout": "tabbed",
   "nodes": [
     {
-      "name": "Google Chrome",
+      "name": "Chromium",
       "swallows": [
         {
-          "class": "^Google\\-chrome$"
+          "class": "^Chromium$"
         }
       ]
     },
