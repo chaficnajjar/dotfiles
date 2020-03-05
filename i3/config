@@ -220,3 +220,5 @@ client.focused #458588 #458588 #EBDBB2 #EBDBB2
 client.focused_inactive #D79921 #D79921 #EBDBB2 #EBDBB2
 client.unfocused #333333 #333333 #EBDBB2 #EBDBB2
 client.urgent #CC241D #CC241D #EBDBB2 #EBDBB2
+
+workspace_layout tabbed
