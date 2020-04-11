@@ -1,4 +1,3 @@
 save-prefix=
 prefix=${HOME}/.npm-global
 registry=https://registry.npmjs.org/
-//registry.npmjs.org/:_authToken=${NPM_TOKEN}
