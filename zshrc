@@ -130,9 +130,6 @@ export GPG_TTY=$(tty)
 export NVM_DIR="/home/chafic/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Wrap git automatically.
-eval "$(hub alias -s)"
-
 # https://www.reddit.com/r/archlinux/comments/332jlc/psa_have_the_terminal_tell_you_what_to_install/
 source /usr/share/doc/pkgfile/command-not-found.zsh
 
