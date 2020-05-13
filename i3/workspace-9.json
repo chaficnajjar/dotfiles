@@ -1,9 +1,14 @@
 {
-  "name": "Terminal",
-  "swallows": [
-     {
-      "class": "^Gnome\\-terminal$",
-      "window_role": "^todo$"
-     }
+  "layout": "tabbed",
+  "nodes": [
+    {
+      "name": "Terminal",
+      "swallows": [
+        {
+          "class": "^Gnome\\-terminal$",
+          "window_role": "^todo$"
+        }
+      ]
+    }
   ]
 }

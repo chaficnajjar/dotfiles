@@ -1,9 +1,14 @@
 {
-  "name": "Terminal",
-  "swallows": [
-     {
-      "class": "^Gnome\\-terminal$",
-      "window_role": "^music$"
-     }
+  "layout": "tabbed",
+  "nodes": [
+    {
+      "name": "Terminal",
+      "swallows": [
+        {
+          "class": "^Gnome\\-terminal$",
+          "window_role": "^music$"
+        }
+      ]
+    }
   ]
 }
