@@ -214,3 +214,8 @@ inoremap <silent><expr> <C-h> coc#refresh()
 " Ctrl + j = go to previous error or warning.
 nmap <silent> <C-k> <Plug>(coc-diagnostic-prev)
 nmap <silent> <C-j> <Plug>(coc-diagnostic-next)
+
+" Prettier configuration taken from https://github.com/neoclide/coc-prettier/blob/master/Readme.md.
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
