@@ -1,4 +1,5 @@
 {
+  "scss.lint.emptyRules": "ignore",
   "eslint.autoFixOnSave": true,
   "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "diagnostic.errorSign": "✘",
