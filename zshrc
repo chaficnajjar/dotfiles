@@ -89,9 +89,6 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
-# Activates CTRL+SHIFT+n in gnome terminal.
-source /etc/profile.d/vte.sh
-
 # My aliases.
 alias rm="rm -i"
 alias vi="nvim"
