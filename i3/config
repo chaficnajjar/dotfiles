@@ -21,7 +21,7 @@ set $mod Mod4
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango: Terminus, FontAwesome 8
+font pango: Source Code Pro Semibold, FontAwesome 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -205,9 +205,9 @@ new_float pixel 3
 bar {
   position          top
   status_command    i3status
-  separator_symbol " :::::: "
+  separator_symbol " :::: "
   colors {
-    separator #D79921
+    separator #888888
     background #282828
     statusline #EBDBB2
     focused_workspace #458588 #458588 #EBDBB2
