@@ -170,8 +170,8 @@ mode "$mode_system" {
   bindsym e exec --no-startup-id logout, mode "default"
   bindsym s exec --no-startup-id systemctl suspend, mode "default"
   bindsym h exec --no-startup-id systemctl hibernate, mode "default"
-  bindsym r exec --no-startup-id gksudo "shutdown -r now", mode "default"
-  bindsym Shift+s exec --no-startup-id gksudo "shutdown -h now", mode "default"
+  bindsym r exec --no-startup-id systemctl reboot, mode "default"
+  bindsym Shift+s exec --no-startup-id systemctl poweroff, mode "default"
 
   # back to normal: Enter or Escape
   bindsym Return mode "default"
