@@ -152,7 +152,7 @@ exec --no-startup-id nm-applet                      # Network manager.
 exec --no-startup-id unity-settings-daemon          # Unity settings.
 exec --no-startup-id i3-battery-popup               # Battery warning popup.
 exec --no-startup-id ~/.i3/load-layouts
-exec redshift-gtk -l 33.89:35.51 -c ~/.config/redshift.conf
+exec redshift -l 33.89:35.51 -c ~/.config/redshift.conf
 exec $HOME/dotfiles/public/bin/random-wallpaper
 
 # Typematic delay and rate.
