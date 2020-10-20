@@ -1,6 +1,6 @@
 # dotfiles
 
-A collection of dot configurations for my [Lenovo T450s](http://shop.lenovo.com/gb/en/laptops/thinkpad/t-series/t450s/) running [Arch Linux](https://www.archlinux.org/).
+A collection of dot configurations for my [Lenovo T14s](https://www.lenovo.com/us/en/laptops/thinkpad/thinkpad-t-series/ThinkPad-T14s-G1/p/22TPT14T4S1) running [Arch Linux](https://www.archlinux.org/).
 
 ## Prerequisites
 
