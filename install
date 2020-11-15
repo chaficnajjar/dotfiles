@@ -1,7 +1,7 @@
 #!/bin/bash
 
 files_in_home_dir="gtkrc-2.0 i3 i3status.conf npmrc psql tmux.conf xbindkeysrc xinitrc Xmodmap zshrc"
-files_in_config_dir="archey3.cfg cmus gtk-3.0 kitty nvim picom.conf zathura"
+files_in_config_dir="cmus gtk-3.0 kitty neofetch nvim picom.conf zathura"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # clean and backup
