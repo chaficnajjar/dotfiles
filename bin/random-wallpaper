@@ -1,17 +1,7 @@
 #!/bin/bash
-# Found here: https://wiki.archlinux.org/index.php/Feh
-
-shopt -s nullglob
-cd ~/projects/wallpapers
+# Found here: https://wiki.archlinux.org/index.php/Feh#Random_background_image
 
 while true; do
-    files=()
-    for i in *.jpg *.png; do
-        [[ -f $i ]] && files+=("$i")
-    done
-    range=${#files[@]}
-
-    ((range)) && feh --bg-scale "${files[RANDOM % range]}"
-
+    feh --bg-scale --randomize ~/projects/wallpapers/*
     sleep 15m
 done
