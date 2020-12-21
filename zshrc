@@ -135,3 +135,7 @@ HEROKU_AC_ZSH_SETUP_PATH=/home/chafic/.cache/heroku/autocomplete/zsh_setup && te
 
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
+
+# Share history across terminals (see https://nuclearsquid.com/writings/shared-history-in-zsh/).
+setopt inc_append_history
+setopt share_history
