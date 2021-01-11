@@ -144,7 +144,7 @@ exec --no-startup-id nm-applet                      # Network manager.
 exec --no-startup-id unity-settings-daemon          # Unity settings.
 exec --no-startup-id i3-battery-popup               # Battery warning popup.
 exec --no-startup-id ~/.i3/load-layouts
-exec $HOME/dotfiles/public/bin/random-wallpaper
+exec $HOME/dotfiles/bin/random-wallpaper
 
 # Typematic delay and rate.
 exec --no-startup-id xset r rate 200 30

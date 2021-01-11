@@ -15,7 +15,7 @@ Install:
 
 ### Clone the repo
 
-`git clone https://github.com/chaficnajjar/dotfiles.git ~/dotfiles/public`
+`git clone https://github.com/chaficnajjar/dotfiles.git ~/dotfiles`
 
 ### Create symlinks
 
