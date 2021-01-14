@@ -102,6 +102,7 @@ alias ls='echo "use \"e\""'
 alias top='echo "use \"htop\""'
 alias curl='echo "use \"http\""'
 alias cat='echo "use \"bat\""'
+alias ps='echo "use \"procs\""'
 
 export FZF_DEFAULT_COMMAND='fd --type f'
 alias v='vi "$(fzf)"'
