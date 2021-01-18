@@ -5,8 +5,7 @@
       "name": "Terminal",
       "swallows": [
         {
-          "class": "^Gnome\\-terminal$",
-          "window_role": "^music$"
+          "class": "^music$"
         }
       ]
     }

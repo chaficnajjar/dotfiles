@@ -13,8 +13,7 @@
       "name": "Terminal",
       "swallows": [
         {
-          "class": "^Gnome\\-terminal$",
-          "window_role": "^terminal$"
+          "class": "^terminal$"
         }
       ]
     }
