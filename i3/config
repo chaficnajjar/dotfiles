@@ -138,7 +138,7 @@ bindsym $mod+r mode "resize"
 
 # Start a terminal.
 # According to issue #2815 in the kitty repository, `--single-instance` makes kitty startup instant for all but the first window.
-bindsym $mod+Return exec i3-sensible-terminal --single-instance
+bindsym $mod+Return exec kitty --single-instance
 
 exec --no-startup-id nm-applet                      # Network manager.
 exec --no-startup-id unity-settings-daemon          # Unity settings.

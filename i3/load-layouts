@@ -6,6 +6,6 @@ i3-msg "workspace 10; append_layout ~/.i3/workspace-10.json;"
 i3-msg "workspace 3;"
 
 (chromium &)
-(i3-sensible-terminal --class todo -- nvim $HOME/documents/todo.gpg &)
-(i3-sensible-terminal --class music -- cmus &)
-(i3-sensible-terminal --class terminal &)
+(kitty --class todo -- nvim $HOME/documents/todo.gpg &)
+(kitty --class music -- cmus &)
+(kitty --class terminal &)
