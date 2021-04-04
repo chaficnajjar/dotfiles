@@ -51,6 +51,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'lambdalisue/suda.vim'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'pantharshit00/vim-prisma'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
