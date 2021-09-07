@@ -1,9 +1,9 @@
 {
-  "scss.lint.emptyRules": "ignore",
-  "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "diagnostic.errorSign": "✘",
   "diagnostic.warningSign": "✘",
+  "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "javascript.suggestionActions.enabled": false,
+  "scss.lint.emptyRules": "ignore",
   "stylelint.filetypes": ["css", "scss"],
   "typescript.suggestionActions.enabled": false
 }
