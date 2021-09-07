@@ -1,6 +1,6 @@
 {
   "scss.lint.emptyRules": "ignore",
-  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "diagnostic.errorSign": "✘",
   "diagnostic.warningSign": "✘",
   "javascript.suggestionActions.enabled": false,
