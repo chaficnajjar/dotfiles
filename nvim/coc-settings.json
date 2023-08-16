@@ -4,5 +4,6 @@
   "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "javascript.suggestionActions.enabled": false,
   "scss.lint.emptyRules": "ignore",
+  "tsserver.useLocalTsdk": true,
   "typescript.suggestionActions.enabled": false
 }
