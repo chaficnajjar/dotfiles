@@ -105,6 +105,7 @@ alias cat='echo "use \"bat\""'
 alias ps='echo "use \"procs\""'
 alias du='echo "use \"di\""'
 alias di=diskus
+alias pn=pnpm
 
 export FZF_DEFAULT_COMMAND='fd --type f'
 alias v='vi "$(fzf)"'
