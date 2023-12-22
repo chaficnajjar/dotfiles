@@ -184,6 +184,7 @@ for_window [class="MPlayer" instance="vdpau"] floating enable
 for_window [class="Nautilus" instance="file_progress"] floating enable
 for_window [class="Dolphin" title="(Copying.*)|(Moving.*)|(Progress Dialog)"] floating enable
 for_window [class="Pinentry" instance="pinentry" title="pinentry"] floating enable
+for_window [class="Chromium" title="Telegram Web"] floating disable
 
 new_window pixel 3
 new_float pixel 3
