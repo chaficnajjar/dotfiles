@@ -218,9 +218,4 @@ inoremap <silent><expr> <C-h> coc#refresh()
 nmap <silent> <C-k> <Plug>(coc-diagnostic-prev)
 nmap <silent> <C-j> <Plug>(coc-diagnostic-next)
 
-" Prettier configuration taken from https://github.com/neoclide/coc-prettier/blob/master/Readme.md#usage.
-command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
-vmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
-
 set pyxversion=3

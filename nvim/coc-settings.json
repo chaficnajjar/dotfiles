@@ -1,7 +1,4 @@
 {
-  "[css][javascript][javascriptreact][json][markdown][typescript][typescriptreact]": {
-    "coc.preferences.formatOnSave": true
-  },
   "diagnostic.errorSign": "✘",
   "diagnostic.warningSign": "✘",
   "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
