@@ -177,7 +177,6 @@ focus_follows_mouse no
 # Launch in floating mode
 for_window [window_role="pop-up"] floating enable
 for_window [instance="gaia"] floating enable
-for_window [instance="totem"] floating enable
 for_window [instance="feh"] floating enable
 for_window [class="MPlayer" instance="vdpau"] floating enable
 for_window [class="Nautilus" instance="file_progress"] floating enable
