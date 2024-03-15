@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files_in_home_dir="gtkrc-2.0 i3 i3status.conf npmrc psql tmux.conf xbindkeysrc xinitrc Xmodmap zshrc"
+files_in_home_dir="gtkrc-2.0 i3 i3status.conf npmrc psql tmux.conf xbindkeysrc xinitrc zshrc"
 files_in_config_dir="chromium-flags.conf cmus gtk-3.0 kitty neofetch nvim picom.conf rofi rofi-pass zathura"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
