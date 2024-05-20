@@ -142,3 +142,10 @@ export PATH=$N_PREFIX/bin:$PATH
 # Share history across terminals (see https://nuclearsquid.com/writings/shared-history-in-zsh/).
 setopt inc_append_history
 setopt share_history
+
+# bun completions
+[ -s "/home/chafic/.bun/_bun" ] && source "/home/chafic/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
