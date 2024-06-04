@@ -1,5 +1,5 @@
 {
-  "[css][javascript][javascriptreact][json][markdown][typescript][typescriptreact]": {
+  "[html][css][javascript][javascriptreact][json][markdown][typescript][typescriptreact]": {
     "coc.preferences.formatOnSave": true
   },
   "diagnostic.errorSign": "✘",
