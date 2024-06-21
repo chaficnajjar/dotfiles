@@ -157,15 +157,6 @@ autocmd FileType javascript noremap <F3> :call JsBeautify()<cr>
 autocmd FileType css noremap <F3> :call CSSBeautify()<cr>
 autocmd FileType html,svg noremap <F3> :call HtmlBeautify()<cr>
 
-" Remove trailing whitespace.
-fun! <SID>StripTrailingWhitespaces()
-  let l = line(".")
-  let c = col(".")
-  %s/\s\+$//e
-  call cursor(l, c)
-endfun
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
-
 " Allow saving of files as sudo when I forget to start vim using sudo.
 cmap w!! w suda://%
 
