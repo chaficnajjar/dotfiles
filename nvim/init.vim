@@ -16,11 +16,6 @@ autocmd InsertEnter,InsertLeave * set cul!
 " Incremental search
 set incsearch
 
-" Convert tabs to spaces.
-if @% != ".gitconfig" && @% != "gitconfig"
-  au BufReadPost * if &modifiable | retab | endif
-endif
-
 " Indentation
 set autoindent      " set the cursor at same indent as line above
 set smartindent     " try to be smart about indenting (C-style)
