@@ -220,5 +220,3 @@ nmap <silent> <C-j> <Plug>(coc-diagnostic-next)
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
-
-set pyxversion=3
