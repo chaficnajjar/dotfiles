@@ -13,19 +13,8 @@ set cursorline
 " Turn cursorline off when in insert mode
 autocmd InsertEnter,InsertLeave * set cul!
 
-" Incremental search
-set incsearch
-
-" Indentation
-set autoindent      " set the cursor at same indent as line above
-set smartindent     " try to be smart about indenting (C-style)
-
-set tabstop=2       " changes the width of the TAB character
-set shiftwidth=2    " affects what happens when pressing >> or <<
-set softtabstop=2   " with expandtab enabled, allows deleting 2 spaces
-if @% != ".gitconfig" && @% != "gitconfig"
-  set expandtab   " turns TAB into 2 spaces
-endif
+" Try to be smart about indenting (C-style).
+set smartindent
 
 " Automatic back up
 set backupdir=~/.backup/backup//
@@ -90,18 +79,6 @@ noremap gn :bn<cr>
 noremap gp :bp<cr>
 noremap gd :bd<cr>
 
-" Avoid scrolling when switching buffers
-if v:version >= 700
-  au BufLeave * if !&diff | let b:winview = winsaveview() | endif
-  au BufEnter * if exists('b:winview') && !&diff | call winrestview(b:winview) | unlet! b:winview | endif
-endif
-
-" Stop indenting when pasting with the mouse
-set pastetoggle=<F5>
-
-"" Display status line
-set laststatus=2
-
 " break search after reaching last found item
 set nowrapscan
 
@@ -126,10 +103,6 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " Patched powerline fonts fix triangle character alignment problems
 " https://github.com/powerline/fonts
 let g:airline_powerline_fonts = 1
-
-" Unicode encoding
-set encoding=utf-8
-scriptencoding utf-8
 
 " Super efficient shortcut
 nnoremap ; :
@@ -181,9 +154,6 @@ xnoremap <S-j> :m'>+<CR>gv=gv
 
 " Set syntax highlighting of *.snap.js files to JavaScript.
 autocmd BufNewFile,BufRead *.js.snap set syntax=javascript
-
-" See https://github.com/neoclide/coc.nvim#example-vim-configuration and https://medium.com/usevim/vim-101-set-hidden-f78800142855.
-set hidden
 
 highlight CocErrorSign ctermfg=red
 highlight CocWarningSign ctermfg=yellow
