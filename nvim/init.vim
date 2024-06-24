@@ -59,9 +59,9 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 inoremap {<CR> {<CR>}<C-o>O
 
 " Buffer navigation
-noremap gn :bn<cr>
-noremap gp :bp<cr>
-noremap gd :bd<cr>
+noremap gn :bn<CR>
+noremap gp :bp<CR>
+noremap gd :bd<CR>
 
 " break search after reaching last found item
 set nowrapscan
@@ -70,7 +70,7 @@ set nowrapscan
 let mapleader=","
 
 " Goyo shortcut
-nnoremap <silent> <leader>z :Goyo<cr>
+nnoremap <silent> <leader>z :Goyo<CR>
 
 " configure Goyo
 let g:goyo_width=140
@@ -107,12 +107,12 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 autocmd FileType tex noremap <F2> :!xelatex %<CR>
 
 " Beautify.
-autocmd FileType json noremap <F3> :%!python -m json.tool<cr>
+autocmd FileType json noremap <F3> :%!python -m json.tool<CR>
 au BufNewFile,BufRead *.geojson set filetype=geojson
-autocmd FileType geojson noremap <F3> :%!python -m json.tool<cr>
-autocmd FileType javascript noremap <F3> :call JsBeautify()<cr>
-autocmd FileType css noremap <F3> :call CSSBeautify()<cr>
-autocmd FileType html,svg noremap <F3> :call HtmlBeautify()<cr>
+autocmd FileType geojson noremap <F3> :%!python -m json.tool<CR>
+autocmd FileType javascript noremap <F3> :call JsBeautify()<CR>
+autocmd FileType css noremap <F3> :call CSSBeautify()<CR>
+autocmd FileType html,svg noremap <F3> :call HtmlBeautify()<CR>
 
 " Allow saving of files as sudo when I forget to start vim using sudo.
 cmap w!! w suda://%
