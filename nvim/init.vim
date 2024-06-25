@@ -116,10 +116,6 @@ cmap w!! w suda://%
 " Automatically refresh Vim on buffer/window focus.
 autocmd FocusGained * checktime
 
-let g:NERDCustomDelimiters={
-  \ 'javascript': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' }
-\}
-
 " Move line up one line.
 nnoremap <S-k> :m-2<CR>
 
