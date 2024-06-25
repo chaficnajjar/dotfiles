@@ -110,7 +110,6 @@ alias pn=pnpm
 export FZF_DEFAULT_COMMAND='fd --type f'
 alias v='vi "$(fzf)"'
 
-~/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh  # Fix terminal issue with displaying gruvbox colors properly.
 export GPGKEY=33863E8C  # Set default GPG key.
 export VISUAL="nvim"      # Make NeoVim the default editor.
 export EDITOR="nvim"      # Make NeoVim the default editor. Now, "sudoedit" will open NeoVim.
