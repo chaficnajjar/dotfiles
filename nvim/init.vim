@@ -48,10 +48,6 @@ call plug#end()
 " Gruvbox (https://github.com/morhetz/gruvbox) theme
 colorscheme gruvbox
 
-if $COLORTERM == 'gnome-terminal'
-  set t_Co=256
-endif
-
 " Disable auto commenting
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
