@@ -39,8 +39,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
 Plug 'styled-components/vim-styled-components', { 'branch': 'develop' }
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
 Plug 'will133/vim-dirdiff'
 
 call plug#end()
