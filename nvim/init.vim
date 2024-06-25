@@ -1,27 +1,27 @@
 " Turn hybrid line numbers on (see https://jeffkreeftmeijer.com/vim-number/).
 set number relativenumber
 
-" Display long lines as just one line
+" Display long lines as just one line.
 set nowrap
 
-" Ignoring case when searching
+" Ignoring case when searching.
 set ignorecase
 
-" Highlight current line
+" Highlight current line.
 set cursorline
 
-" Turn cursorline off when in insert mode
+" Turn cursorline off when in insert mode.
 autocmd InsertEnter,InsertLeave * set cul!
 
 " Try to be smart about indenting (C-style).
 set smartindent
 
-" Automatic back up
+" Automatic back up.
 set backupdir=~/.backup/backup//
 set directory=~/.backup/swap//
 set undodir=~/.backup/undo//
 
-" vim-plug
+" vim-plug.
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'andymass/vim-matchup'
@@ -43,50 +43,50 @@ Plug 'will133/vim-dirdiff'
 
 call plug#end()
 
-" Gruvbox (https://github.com/morhetz/gruvbox) theme
+" Gruvbox (https://github.com/morhetz/gruvbox) theme.
 colorscheme gruvbox
 
-" Disable auto commenting
+" Disable auto commenting.
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Curly brace + enter key = proper indentation
+" Curly brace + enter key = proper indentation.
 inoremap {<CR> {<CR>}<C-o>O
 
-" Buffer navigation
+" Buffer navigation.
 noremap gn :bn<CR>
 noremap gp :bp<CR>
 noremap gd :bd<CR>
 
-" break search after reaching last found item
+" Break search after reaching last found item.
 set nowrapscan
 
-" set leader key to ,
+" Set leader key to `,`.
 let mapleader=","
 
-" Goyo shortcut
+" Goyo shortcut.
 nnoremap <silent> <leader>z :Goyo<CR>
 
-" configure Goyo
+" Configure Goyo.
 let g:goyo_width=140
 let g:goyo_margin_top=3
 let g:goyo_margin_bottom=3
 
-" Disable markdown highlight
+" Disable markdown highlight.
 autocmd VimEnter * highlight clear htmlItalic
 
-" Enable syntax highlighting for .md files
+" Enable syntax highlighting for .md files.
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 
-" Integrate vim-airline with previously installed powerline fonts
-" Patched powerline fonts fix triangle character alignment problems
-" https://github.com/powerline/fonts
+" Integrate vim-airline with previously installed powerline fonts.
+" Patched powerline fonts fix triangle character alignment problems.
+" https://github.com/powerline/fonts.
 let g:airline_powerline_fonts = 1
 
-" Super efficient shortcut
+" Super efficient shortcut.
 nnoremap ; :
 nnoremap : <NOP>
 
-" Leave insert mode
+" Leave insert mode.
 inoremap jk <ESC>
 
 vmap <C-c> "+yi
@@ -94,10 +94,10 @@ vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+"
 
-" CtrlP: ignore files in .gitignore
+" CtrlP: ignore files in .gitignore.
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
-" Compilation shortcuts
+" Compilation shortcuts.
 autocmd FileType tex noremap <F2> :!xelatex %<CR>
 
 " Beautify.
