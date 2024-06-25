@@ -77,7 +77,7 @@ let g:goyo_margin_bottom=3
 autocmd VimEnter * highlight clear htmlItalic
 
 " Enable syntax highlighting for .md files
-au BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 " Integrate vim-airline with previously installed powerline fonts
 " Patched powerline fonts fix triangle character alignment problems
@@ -104,7 +104,7 @@ autocmd FileType tex noremap <F2> :!xelatex %<CR>
 
 " Beautify.
 autocmd FileType json noremap <F3> :%!python -m json.tool<CR>
-au BufNewFile,BufRead *.geojson set filetype=geojson
+autocmd BufNewFile,BufRead *.geojson set filetype=geojson
 autocmd FileType geojson noremap <F3> :%!python -m json.tool<CR>
 autocmd FileType javascript noremap <F3> :call JsBeautify()<CR>
 autocmd FileType css noremap <F3> :call CSSBeautify()<CR>
