@@ -29,7 +29,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 
 Plug('andymass/vim-matchup')
 Plug('ap/vim-css-color')
-Plug('bling/vim-airline')
 Plug('ctrlpvim/ctrlp.vim')
 Plug('ellisonleao/gruvbox.nvim')
 Plug('jamessan/vim-gnupg')
@@ -37,6 +36,8 @@ Plug('junegunn/goyo.vim')
 Plug('lambdalisue/suda.vim')
 Plug('maksimr/vim-jsbeautify')
 Plug('neoclide/coc.nvim', { ['branch'] = 'release' })
+Plug('nvim-lualine/lualine.nvim')
+Plug('nvim-tree/nvim-web-devicons')
 Plug('pantharshit00/vim-prisma')
 Plug('Raimondi/delimitMate')
 Plug('scrooloose/nerdcommenter')
@@ -48,6 +49,8 @@ vim.call('plug#end')
 
 -- Gruvbox (https://github.com/morhetz/gruvbox) theme.
 vim.cmd.colorscheme('gruvbox')
+
+require('lualine').setup()
 
 -- Disable auto commenting.
 vim.api.nvim_create_autocmd('FileType', { command = 'setlocal formatoptions-=c formatoptions-=r formatoptions-=o' })
@@ -82,11 +85,6 @@ vim.api.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
 	pattern = '*.md',
 	command = 'set filetype=markdown'
 })
-
--- Integrate vim-airline with previously installed powerline fonts.
--- Patched powerline fonts fix triangle character alignment problems.
--- https://github.com/powerline/fonts.
-vim.g.airline_powerline_fonts = 1
 
 -- Super efficient shortcut.
 vim.api.nvim_set_keymap('n', ';', ':', { noremap = true })
