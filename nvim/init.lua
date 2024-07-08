@@ -50,7 +50,16 @@ vim.call('plug#end')
 -- Gruvbox (https://github.com/morhetz/gruvbox) theme.
 vim.cmd.colorscheme('gruvbox')
 
-require('lualine').setup()
+require('lualine').setup {
+	sections = {
+		lualine_c = {
+			{
+				'filename',
+				path = 1
+			}
+		}
+	}
+}
 
 -- Disable auto commenting.
 vim.api.nvim_create_autocmd('FileType', { command = 'setlocal formatoptions-=c formatoptions-=r formatoptions-=o' })
