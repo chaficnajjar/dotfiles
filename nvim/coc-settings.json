@@ -4,6 +4,7 @@
   },
   "diagnostic.errorSign": "✘",
   "diagnostic.warningSign": "✘",
+  "eslint.experimental.useFlatConfig": true,
   "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "javascript.suggestionActions.enabled": false,
   "Lua.diagnostics.globals": ["vim"],
