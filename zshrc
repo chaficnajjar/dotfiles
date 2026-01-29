@@ -99,7 +99,6 @@ alias todo="vi $HOME/documents/todo.gpg"
 alias gbpurge='git branch --merged | grep -Ev "(\*|master|develop|staging|gh-pages)" | xargs -n 1 git branch -d'
 alias e='eza'
 alias top='echo "use \"htop\""'
-alias curl='echo "use \"http\""'
 alias cat='echo "use \"bat\""'
 alias ps='echo "use \"procs\""'
 alias du='echo "use \"di\""'
