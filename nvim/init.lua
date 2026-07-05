@@ -447,6 +447,8 @@ do
 
   -- ... and there is more!
   --  Check out: https://github.com/nvim-mini/mini.nvim
+
+  require('mini.move').setup()
 end
 
 -- ============================================================
@@ -701,7 +703,28 @@ do
     --    https://github.com/pmizio/typescript-tools.nvim
     --
     -- But for many setups, the LSP (`ts_ls`) will work just fine
-    -- ts_ls = {},
+    ts_ls = {},
+    tailwindcss = {},
+    oxlint = {},
+    oxfmt = {},
+    emmet_language_server = {
+      settings = {
+        filetypes = { 'css', 'html', 'javascript', 'javascriptreact', 'typescriptreact' },
+        -- Read more about these options in the VSCode Emmet docs:
+        -- https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration
+        init_options = {
+          includeLanguages = {},
+          excludeLanguages = {},
+          extensionsPath = {},
+          preferences = {},
+          showAbbreviationSuggestions = true,
+          showExpandedAbbreviation = 'always',
+          showSuggestionsAsSnippets = false,
+          syntaxProfiles = {},
+          variables = {},
+        },
+      },
+    },
 
     stylua = {}, -- Used to format Lua code
 
@@ -750,6 +773,19 @@ do
   -- Automatically install LSPs and related tools to stdpath for Neovim
   require('mason').setup {}
 
+  local oxlint_base_on_attach = vim.lsp.config.oxlint and vim.lsp.config.oxlint.on_attach
+  local oxlint_fix_augroup = vim.api.nvim_create_augroup('kickstart-oxlint-fix-on-save', { clear = true })
+  servers.oxlint.on_attach = function(client, bufnr)
+    if oxlint_base_on_attach then oxlint_base_on_attach(client, bufnr) end
+
+    vim.api.nvim_clear_autocmds { group = oxlint_fix_augroup, buffer = bufnr }
+    vim.api.nvim_create_autocmd('BufWritePre', {
+      group = oxlint_fix_augroup,
+      buffer = bufnr,
+      command = 'LspOxlintFixAll',
+    })
+  end
+
   -- Ensure the servers and tools above are installed
   --
   -- To check the current status of installed tools and/or manually install
@@ -780,32 +816,40 @@ do
   require('conform').setup {
     notify_on_error = false,
     format_on_save = function(bufnr)
-      -- You can specify filetypes to autoformat on save here:
-      local enabled_filetypes = {
-        -- lua = true,
-        -- python = true,
-      }
-      if enabled_filetypes[vim.bo[bufnr].filetype] then
-        return { timeout_ms = 500 }
-      else
+      -- Disable format-on-save for languages without a standardized style.
+      local disable_filetypes = { c = true, cpp = true }
+      if disable_filetypes[vim.bo[bufnr].filetype] then
         return nil
       end
+
+      return { timeout_ms = 99999 }
     end,
     default_format_opts = {
       lsp_format = 'fallback', -- Use external formatters if configured below, otherwise use LSP formatting. Set to `false` to disable LSP formatting entirely.
     },
     -- You can also specify external formatters in here.
     formatters_by_ft = {
+      lua = { 'stylua' },
       -- rust = { 'rustfmt' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
       -- You can use 'stop_after_first' to run the first available formatter from the list
-      -- javascript = { "prettierd", "prettier", stop_after_first = true },
+      javascript = { 'oxfmt' },
+      javascriptreact = { 'oxfmt' },
+      typescript = { 'oxfmt' },
+      typescriptreact = { 'oxfmt' },
+      json = { 'oxfmt' },
+      jsonc = { 'oxfmt' },
+      yaml = { 'oxfmt' },
+      html = { 'oxfmt' },
+      css = { 'oxfmt' },
+      graphql = { 'oxfmt' },
+      markdown = { 'oxfmt' },
     },
   }
 
-  vim.keymap.set({ 'n', 'v' }, '<leader>f', function() require('conform').format { async = true } end, { desc = '[F]ormat buffer' })
+  vim.keymap.set({ 'n', 'v' }, '<leader>f', function() require('conform').format { async = true, lsp_format = 'fallback' } end, { desc = '[F]ormat buffer' })
 end
 
 -- ============================================================
@@ -966,18 +1010,110 @@ do
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug'
-  -- require 'kickstart.plugins.indent_line'
+  require 'kickstart.plugins.debug'
+  require 'kickstart.plugins.indent_line'
   -- require 'kickstart.plugins.lint'
-  -- require 'kickstart.plugins.autopairs'
-  -- require 'kickstart.plugins.neo-tree'
-  -- require 'kickstart.plugins.gitsigns' -- adds gitsigns recommended keymaps
+  require 'kickstart.plugins.autopairs'
+  require 'kickstart.plugins.neo-tree'
+  require 'kickstart.plugins.gitsigns' -- adds gitsigns recommended keymaps
 
   -- NOTE: You can add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  -- require 'custom.plugins'
+  require 'custom.plugins'
+
+  vim.pack.add {
+    gh 'ellisonleao/gruvbox.nvim',
+    gh 'lambdalisue/suda.vim',
+    gh 'jamessan/vim-gnupg',
+    gh 'ctrlpvim/ctrlp.vim',
+    gh 'nvim-lualine/lualine.nvim',
+    gh 'olrtg/nvim-emmet',
+    gh 'ap/vim-css-color',
+  }
+
+  vim.keymap.set({ 'n', 'v' }, '<leader>xe', require('nvim-emmet').wrap_with_abbreviation)
 end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- Turn hybrid line numbers on (see https://jeffkreeftmeijer.com/vim-number/).
+vim.opt.number = true
+vim.opt.relativenumber = true
+
+-- Display long lines as just one line.
+vim.opt.wrap = false
+
+-- Ignoring case when searching.
+vim.opt.ignorecase = true
+
+-- Super efficient shortcut.
+vim.api.nvim_set_keymap('n', ';', ':', { noremap = true })
+vim.api.nvim_set_keymap('n', ':', '<nop>', { noremap = true })
+
+-- Leave insert mode.
+vim.api.nvim_set_keymap('i', 'jk', '<ESC>', { noremap = true })
+
+vim.o.background = 'dark' -- or "light" for light mode
+vim.cmd [[colorscheme gruvbox]]
+
+require('lualine').setup {
+  sections = {
+    lualine_c = {
+      {
+        'filename',
+        path = 1,
+      },
+    },
+  },
+}
+
+-- Buffer navigation.
+vim.api.nvim_set_keymap('n', 'gn', ':bn<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', 'gp', ':bp<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', 'gd', ':bd<CR>', { noremap = true })
+
+-- Break search after reaching last found item.
+vim.opt.wrapscan = false
+
+-- vim.keymap.set('n', '<C-l>', vim.lsp.buf.hover, { silent = true })
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+vim.keymap.set('n', '<C-k>', function() vim.diagnostic.jump { count = -1, wrap = false } end)
+vim.keymap.set('n', '<C-j>', function() vim.diagnostic.jump { count = 1, wrap = false } end)
+
+vim.diagnostic.config {
+  signs = {
+    severity_sort = true,
+    signs = true,
+    text = {
+      [vim.diagnostic.severity.ERROR] = '✘',
+      [vim.diagnostic.severity.WARN] = '✘',
+      [vim.diagnostic.severity.INFO] = 'ℹ',
+      [vim.diagnostic.severity.HINT] = '➤',
+    },
+    underline = true,
+    update_in_insert = false,
+    virtual_text = false,
+  },
+}
+
+vim.cmd 'cmap w!! w suda://%'
+
+-- CtrlP: ignore files in .gitignore.
+vim.g.ctrlp_user_command = { '.git', 'cd %s && git ls-files -co --exclude-standard' }
+
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldcolumn = '0' -- Set to "1" if you want to see the fold column
+vim.opt.foldlevel = 99 -- Folds are open by default
+vim.opt.foldlevelstart = 99
+vim.opt.foldenable = true
+
+-- Compilation shortcuts.
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'tex',
+  command = 'noremap <F2> :!xelatex %<CR>',
+})
+
+vim.o.undofile = false
