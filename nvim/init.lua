@@ -818,9 +818,7 @@ do
     format_on_save = function(bufnr)
       -- Disable format-on-save for languages without a standardized style.
       local disable_filetypes = { c = true, cpp = true }
-      if disable_filetypes[vim.bo[bufnr].filetype] then
-        return nil
-      end
+      if disable_filetypes[vim.bo[bufnr].filetype] then return nil end
 
       return { timeout_ms = 99999 }
     end,
